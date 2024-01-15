@@ -3,10 +3,11 @@ import React from 'react';
 import logo from '../assets/logo.svg';
 import { Link } from 'react-router-dom';
 
+
 const Navbar: React.FC = () => {
   return (
-    <div className="bg-white border-b border-gray-200 dark:bg-gray-900 dark:border-gray-700">
-      <div className="max-w-screen-xl mx-auto px-2  py-3 flex items-center justify-between">
+    <div className="bg-white border-b border-gray-200 dark:border-gray-700  py-2 mt-1">
+      <div className="max-w-screen-xl mx-auto px-2 py-3 flex items-center justify-between">
         {/* Logo on the left edge */}
         <a href="/" className="flex items-center space-x-2">
           <img src={logo} alt="Logo" className="h-8 w-8" />
