@@ -40,6 +40,7 @@ module.exports = {
         primary: '#3B2385',
       },
       
+     
     },
   },
   plugins: [require("tailwindcss-animate")],

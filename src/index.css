@@ -4,6 +4,19 @@
 @import 'tailwindcss/utilities';
 
 body {
-  font-family: 'Droid Serif', serif;
+  margin: 0;
+  padding: 0;
+  
+
   /* Add more global styles as needed */
 }
+
+/* Define custom classes for different font-families */
+.primary-font {
+  font-family: 'Droid Serif', sans-serif;
+}
+
+.secondary-font {
+  font-family: 'Inter', sans-serif;
+}
+

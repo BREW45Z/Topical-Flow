@@ -4,6 +4,7 @@ import logo from '../assets/logo.svg';
 import { Link } from 'react-router-dom';
 
 
+
 const Navbar: React.FC = () => {
   return (
     <div className="bg-white border-b border-gray-200 dark:border-gray-700  py-2 mt-1">
