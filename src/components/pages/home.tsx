@@ -1,31 +1,23 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Navbar from '../shared/navbar';
 import vector from '../assets/Vector.svg';
 import sketch from '../assets/sketch.svg';
 import { Link } from 'react-router-dom';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore from 'swiper/core';
-import Autoplay from 'swiper' // Import SwiperCore
-import 'swiper/swiper-bundle.css';
+import Novartis from '../assets/Novartis.svg';
+import Figma from '../assets/Figma svg.svg';
+import Pfizer from '../assets/Pfizer svg.svg';
+import webflow from '../assets/Webflow svg.svg';
+import verizon from '../assets/Verizon svg.svg';
+import hashicorp from '../assets/HashiCorp svg.svg';
+import product from '../assets/product.svg';
 
 
 
 
-SwiperCore.use([Autoplay]);
+
+
 
   const Home: React.FC = () => {
-    useEffect(() => {
-      const swiper = new Swiper('.logo-swiper', {
-        slidesPerView: 'auto',
-        spaceBetween: 16,
-        loop: true,
-        autoplay: {
-          delay: 2000,
-          disableOnInteraction: false,
-        },
-      });
-    }, []);
-  
 
   return (
     <div>
@@ -104,23 +96,65 @@ SwiperCore.use([Autoplay]);
             <p className="text-lg  text-gray-800 secondary-font text-opacity-75">topics on topicalflow</p>
           </div>
         </div>
+        </div>
+
+    
+     {/* Next Section - Logo carousel */}
+     <div className="flex justify-center items-center mt-10 opacity-70 hover:opacity-100">
+        <div className="flex space-x-10">
+          <img src={Figma} alt="Figma" className="w-24 h-24 opacity-70 hover:opacity-100" />
+          <img src={Novartis} alt="Novartis" className="w-24 h-auto " />
+          <img src={verizon} alt="verizon" className="w-24 h-auto opacity-70 hover:opacity-100" />
+          <img src={webflow} alt="webflow" className="w-24 h-auto opacity-70 hover:opacity-100" />
+          <img src={Pfizer} alt="pfizer" className="w-24 h-auto opacity-70 hover:opacity-100" />
+          <img src={hashicorp} alt="hashicorp" className="w-24 h-auto opacity-70 hover:opacity-100" />
+          <img src={product} alt="product" className="w-24 h-auto opacity-70 hover:opacity-100" />
+        </div>
       </div>
 
-      {/* Next Section - Logo carousel */}
-      <div className="flex justify-center items-center mt-10">
-        {/* Wrapper for Swiper */}
-        <Swiper className="logo-swiper" spaceBetween={16} slidesPerView="auto" loop autoplay={{ delay: 2000 }}>
-          {/* Add your logo images as SwiperSlides */}
-          <SwiperSlide>
-            <img src="logo1.png" alt="Logo 1" className="w-24 h-24" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="logo2.png" alt="Logo 2" className="w-24 h-24" />
-          </SwiperSlide>
-          {/* Add more slides as needed */}
-        </Swiper>
+{/* Two Columns Section */}
+    {/* Two Columns Section */}
+<div className="flex justify-center items-center mt-10 bg-gray-100">
+  {/* Left Column */}
+  <div className="flex flex-col items-start  ml-4 px-6">
+    <div className=" py-4 px-4 mt-4">
+      <h4 className="text-4xl font-bold  px-1 mb-3">About topicaflow</h4>
+      <div className='w-full flex h-full'>
+        <p className="text-gray-700 text-2xl primary-font flex-wrap ">
+          "TopicalFlow" is an AI-driven content generation tool aimed
+          at helping users build topical authority. The web application
+          enables users to create projects within a specific niche,
+          for which the AI system will then suggest relevant topics.
+        </p>
       </div>
     </div>
+    {/* Add more text or content as needed */}
+  </div>
+
+ {/* Right Column */}
+<div className="p-4 rounded-md px-40">
+  <div className="relative w-[391.35px] h-[429.58px] border-primary border-4">
+    {/* Notebook Page */}
+    <div className="absolute top-0 left-0 right-0 bottom-0 overflow-hidden">
+      <div className="bg-white h-full w-full p-4">
+        {/* Writing Lines */}
+        <div className="h-full flex flex-col justify-between">
+    
+        </div>
+      </div>
+    </div>
+
+    {/* Rectangle Box at the Left Bottom Edge */}
+    <div className="absolute bottom-0 left-0 bg-blue-500 text-white p-2">
+      {/* Your content goes here */}
+      <p>This is the box</p>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
   );
 };
 
