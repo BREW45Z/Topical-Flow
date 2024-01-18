@@ -10,6 +10,16 @@ import webflow from '../assets/Webflow svg.svg';
 import verizon from '../assets/Verizon svg.svg';
 import hashicorp from '../assets/HashiCorp svg.svg';
 import product from '../assets/product.svg';
+import purplebox from '../assets/purplebox.svg';
+import line1 from '../assets/line1.svg';
+import line2 from '../assets/line2.svg';
+import longline1 from '../assets/line1.svg';
+import longline2 from '../assets/longline2.svg'
+
+
+
+
+
 
 
 
@@ -114,29 +124,42 @@ import product from '../assets/product.svg';
 
 {/* Two Columns Section */}
     {/* Two Columns Section */}
-<div className="flex justify-center items-center mt-10 bg-gray-100">
+<div className=" flex justify-center items-center  bg-F9F5FF-100 mr-2 ml-2 ">
   {/* Left Column */}
-  <div className="flex flex-col items-start  ml-4 px-6">
-    <div className=" py-4 px-4 mt-4">
-      <h4 className="text-4xl font-bold  px-1 mb-3">About topicaflow</h4>
+  <div className="flex flex-col items-center ml-2 mr-2">
+    <div className="px-5">
+      <h4 className="text-4xl font-bold  px-3 mb-3">About topicaflow</h4>
       <div className='w-full flex h-full'>
-        <p className="text-gray-700 text-2xl primary-font flex-wrap ">
+        <p className=" px-4 text-gray-400 text-2xl primary-font flex-wrap ">
           "TopicalFlow" is an AI-driven content generation tool aimed
           at helping users build topical authority. The web application
           enables users to create projects within a specific niche,
           for which the AI system will then suggest relevant topics.
         </p>
       </div>
+      <div className='px-4'>
+      <Link to="/signup">
+            <button className=" bg-primary text-white px-7 py-4 mt-3 rounded-full hover:bg-3B2385 hover:text-white transition duration-300">
+              Learn more
+            </button>
+          </Link>
+      </div>
     </div>
     {/* Add more text or content as needed */}
   </div>
 
  {/* Right Column */}
-<div className="p-4 rounded-md px-40">
-  <div className="relative w-[391.35px] h-[429.58px] border-primary border-4">
+<div className=" relative p-4 m px-40 mr-20">
+  <div className='asolute py-3'>
+  <p className=' text-primary'>topicaflow</p>
+
+  </div>
+  <div className="relative w-[340.35px] h-[360.58px]  border-secondary border-3 shadow">
+ 
+
     {/* Notebook Page */}
     <div className="absolute top-0 left-0 right-0 bottom-0 overflow-hidden">
-      <div className="bg-white h-full w-full p-4">
+      <div className="bg-gray-100 h-full w-full">
         {/* Writing Lines */}
         <div className="h-full flex flex-col justify-between">
     
@@ -145,15 +168,35 @@ import product from '../assets/product.svg';
     </div>
 
     {/* Rectangle Box at the Left Bottom Edge */}
-    <div className="absolute bottom-0 left-0 bg-blue-500 text-white p-2">
-      {/* Your content goes here */}
-      <p>This is the box</p>
+    <div className=" relative bottom-0 left-0 text-white mt-5 p-2 ml-4">
+      <div className='flex justify-center p-5 space-x-10 mt-3 items-center'>
+        <div>
+        <img src={purplebox} alt="box" className="w-24 h-auto opacity-70 hover:opacity-100" />
+        </div>
+        <div>
+        <img src={line2} alt="product" className="w-full h-auto mb-4 opacity-70 hover:opacity-100" />
+        <img src={line1} alt="product" className="w-24 h-auto opacity-70 hover:opacity-100" />
+       
+        </div>
+        
+         </div>
+
+      </div>
+      <div className='mt-3 items-center justify-center px-5 w-full'>
+        <img src={longline2} alt="product" className=" flex w-full mb-4 h-full opacity-70 hover:opacity-100" />
+        <img src={longline1} alt="product" className=" flex  w-40 h-auto mb-4 opacity-70 hover:opacity-100" />
+        <img src={longline2} alt="product" className=" flex w-full h-auto mb-4 opacity-70 hover:opacity-100" />
+        <img src={longline1} alt="product" className=" flex  w-40 h-auto mb-4 opacity-70 hover:opacity-100" />
+        <img src={longline1} alt="product" className=" flex  w-40 h-auto mb-4 opacity-70 hover:opacity-100" />
+        </div>
+        </div>
+
+
     </div>
   </div>
 </div>
 
-  </div>
-</div>
+
 
   );
 };
