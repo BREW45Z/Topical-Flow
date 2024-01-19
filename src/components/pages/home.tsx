@@ -14,7 +14,11 @@ import purplebox from '../assets/purplebox.svg';
 import line1 from '../assets/line1.svg';
 import line2 from '../assets/line2.svg';
 import longline1 from '../assets/line1.svg';
-import longline2 from '../assets/longline2.svg'
+import longline2 from '../assets/longline2.svg';
+import infoperson from '../assets/infoperson.png';
+import infotable from '../assets/infotable.png';
+
+
 
 
 
@@ -128,7 +132,6 @@ import longline2 from '../assets/longline2.svg'
         </div>
       </div>
 
-{/* Two Columns Section */}
     {/* Two Columns Section */}
 <div className=" flex justify-center items-center  bg-purple-100 mr-2 ml-2 ">
   {/* Left Column */}
@@ -136,7 +139,7 @@ import longline2 from '../assets/longline2.svg'
     <div className="px-5">
       <h4 className="text-4xl font-bold  px-3 mb-3">About topicaflow</h4>
       <div className='w-full flex h-full'>
-        <p className=" px-4 text-gray-400 text-2xl primary-font flex-wrap ">
+        <p className=" px-4 text-gray-400 text-2xl secondary-font flex-wrap ">
           "TopicalFlow" is an AI-driven content generation tool aimed
           at helping users build topical authority. The web application
           enables users to create projects within a specific niche,
@@ -173,7 +176,7 @@ import longline2 from '../assets/longline2.svg'
       <div className="bottom-0 left-0 text-white mt-2 p-2 ml-4">
       <div className='flex justify-center p-5 space-x-10 mt-3 items-center'>
         <div>
-          <p className='justify-center text-primary primary-font'>topicalflow</p>
+          <p className='justify-center text-primary text-gray-500'>topicalflow</p>
         <img src={purplebox} alt="box" className="w-24 h-auto opacity-70 hover:opacity-100" />
         </div>
         <div>
@@ -202,17 +205,62 @@ import longline2 from '../assets/longline2.svg'
         <div className=" absolute w-[150px] h-[100px] top-2/3  right-1 left-1 ml-10 border-primary flex bg-white">
       <div className='flex justify-center p-5  items-center'>
         <div>
-        <img src={line1} alt="product" className="w-24 h-auto opacity-70  mb-3 hover:opacity-100" />
-        <img src={line1} alt="product" className="w-24 h-auto opacity-70 hover:opacity-100" />
+        <img src={line1} alt="line1" className="w-24 h-auto opacity-70  mb-3 hover:opacity-100" />
+        <img src={line1} alt="line1" className="w-24 h-auto opacity-70 hover:opacity-100" />
 
        
         </div>
         </div>
       </div>
+      </div>
 
 
-    </div>
   </div>
+
+
+    {/*Next Section*/}
+<div className='flex p-5 items-center justify-center'>
+        <div className='flex space-x-20'>
+          <div className='items-center mt-4'>
+          <img src={infoperson} alt="infoperson" className="  mt-10 mr-20 w-[500.43px] h-[310.75px]  hover:opacity-100" />
+          </div>
+          <div className='mt-7'>
+          <img src={infotable} alt="infoperson" className="  mt-5 w-[460.43px] h-[360.75px] hover:opacity-100" />
+          </div>
+           </div>
+          </div>
+          {/*Description and Specifications section*/}
+<div className='justify-center items-center bg-gray-100 mt-5'>
+<div className=' flex items-center justify-center mt-10'>
+  <h1 className='text-3xl primary-font items-center font-bold mt-12'>Discover more with Topicalflow</h1>
+  </div>
+ <div className='flex justify-center items-center bg-gray-100 mt-2'>
+  <p className='text-2xl primary-font text-center sm:text-left sm:mx-auto'>
+    We have all you need to get your article and all other written content done effortlessly
+  </p>
+</div>
+
+
+{/* Boxes*/}
+<div className='flex justify-center items-center p-4 mt-10 bg-gray-300'> 
+<div className='mt-5 flex text-white justify-center items-center'>
+<div className='flex  flex-col justify-center rounded-md items-center px-3 bg-gray-500 mr-10 w-[250px] h-[250px]'>
+    <p className='justify-center'>Ai article writer</p>
+    
+  </div>
+  <div className='flex justify-center  rounded-md items-center p-4 mr-10 bg-gray-500 w-[250px] h-[250px]'>
+
+    <p>Article Summarizer</p>
+  </div>
+  <div className='flex  justify-center  rounded-md items-center px-3 bg-gray-500 ml-10 w-[250px] h-[250px]'>
+    <p>Generate attractive topics</p>
+  </div>
+  <div className='flex  justify-center  rounded-md items-center px-3  bg-gray-500 ml-10 w-[250px] h-[250px]'>
+    <p>Seamless integration</p>
+  </div>
+</div>
+</div>
+</div>
 </div>
 
 
