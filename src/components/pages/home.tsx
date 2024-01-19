@@ -108,9 +108,15 @@ import longline2 from '../assets/longline2.svg'
         </div>
         </div>
 
+
+
+
+        <div className=' mt-10 flex primary-font justify-center items-center'>
+        <p className='text-2xl'> More than a million articles generated using topicalflow, tested by the best companies</p>
+        </div>
     
      {/* Next Section - Logo carousel */}
-     <div className="flex justify-center items-center mt-10 opacity-70 hover:opacity-100">
+     <div className="flex justify-center items-center opacity-70 hover:opacity-100">
         <div className="flex space-x-10">
           <img src={Figma} alt="Figma" className="w-24 h-24 opacity-70 hover:opacity-100" />
           <img src={Novartis} alt="Novartis" className="w-24 h-auto " />
@@ -124,9 +130,9 @@ import longline2 from '../assets/longline2.svg'
 
 {/* Two Columns Section */}
     {/* Two Columns Section */}
-<div className=" flex justify-center items-center  bg-F9F5FF-100 mr-2 ml-2 ">
+<div className=" flex justify-center items-center  bg-purple-100 mr-2 ml-2 ">
   {/* Left Column */}
-  <div className="flex flex-col items-center ml-2 mr-2">
+  <div className=" flex flex-col items-center ml-2 mr-2">
     <div className="px-5">
       <h4 className="text-4xl font-bold  px-3 mb-3">About topicaflow</h4>
       <div className='w-full flex h-full'>
@@ -150,27 +156,24 @@ import longline2 from '../assets/longline2.svg'
 
  {/* Right Column */}
 <div className=" relative p-4 m px-40 mr-20">
-  <div className='asolute py-3'>
-  <p className=' text-primary'>topicaflow</p>
-
+  <div className='py-3'>
+  <p className=' absolute mt-5 ml-10  px-14 text-primary'>topicaflow</p>
   </div>
-  <div className="relative w-[340.35px] h-[360.58px]  border-secondary border-3 shadow">
- 
+  <div className="relative bg-gray-100 w-[340.35px] h-[360.58px] border-primary">
 
     {/* Notebook Page */}
-    <div className="absolute top-0 left-0 right-0 bottom-0 overflow-hidden">
+    <div className=" top-0 left-0 right-0 bottom-0 overflow-hidden">
       <div className="bg-gray-100 h-full w-full">
         {/* Writing Lines */}
         <div className="h-full flex flex-col justify-between">
     
         </div>
       </div>
-    </div>
 
-    {/* Rectangle Box at the Left Bottom Edge */}
-    <div className=" relative bottom-0 left-0 text-white mt-5 p-2 ml-4">
+      <div className="bottom-0 left-0 text-white mt-2 p-2 ml-4">
       <div className='flex justify-center p-5 space-x-10 mt-3 items-center'>
         <div>
+          <p className='justify-center text-primary primary-font'>topicalflow</p>
         <img src={purplebox} alt="box" className="w-24 h-auto opacity-70 hover:opacity-100" />
         </div>
         <div>
@@ -182,14 +185,30 @@ import longline2 from '../assets/longline2.svg'
          </div>
 
       </div>
-      <div className='mt-3 items-center justify-center px-5 w-full'>
+   
+       <div className=' relative mt-3 items-center justify-center px-5 w-full'>
         <img src={longline2} alt="product" className=" flex w-full mb-4 h-full opacity-70 hover:opacity-100" />
         <img src={longline1} alt="product" className=" flex  w-40 h-auto mb-4 opacity-70 hover:opacity-100" />
         <img src={longline2} alt="product" className=" flex w-full h-auto mb-4 opacity-70 hover:opacity-100" />
         <img src={longline1} alt="product" className=" flex  w-40 h-auto mb-4 opacity-70 hover:opacity-100" />
         <img src={longline1} alt="product" className=" flex  w-40 h-auto mb-4 opacity-70 hover:opacity-100" />
         </div>
+
+
+        {/*edge of notebook */}
+    
+    </div>
         </div>
+        <div className=" absolute w-[150px] h-[100px] top-2/3  right-1 left-1 ml-10 border-primary flex bg-white">
+      <div className='flex justify-center p-5  items-center'>
+        <div>
+        <img src={line1} alt="product" className="w-24 h-auto opacity-70  mb-3 hover:opacity-100" />
+        <img src={line1} alt="product" className="w-24 h-auto opacity-70 hover:opacity-100" />
+
+       
+        </div>
+        </div>
+      </div>
 
 
     </div>
