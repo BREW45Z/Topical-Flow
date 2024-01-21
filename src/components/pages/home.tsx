@@ -21,6 +21,8 @@ import AIicon1 from '../assets/aiicons1.svg';
 import AIicon2 from '../assets/aiicons2.svg';
 import AIicon3 from '../assets/aiicons3.svg';
 import AIicon4 from '../assets/aiicons4.svg';
+import infoperson2 from '../assets/infoperson2.svg';
+
 
 
 
@@ -244,7 +246,6 @@ import AIicon4 from '../assets/aiicons4.svg';
   </p>
 </div>
 
-
 {/* Boxes*/}
 <div className='flex justify-center items-center p-4 mt-10 bg-gray-300'> 
 <div className='mt-5 flex text-white justify-center items-center'>
@@ -283,7 +284,32 @@ import AIicon4 from '../assets/aiicons4.svg';
 
 </div>
 </div>
+
+
 </div>
+{/** Next Section*/}
+<div className='flex p-4 bg-gray-100'>
+  <div className='flex items-center justify-center mt-4'>
+    <div className=' m-20 text-bold primary-font text-base'>
+      <h1 className='text-lg md:text-3xl lg:text-4xl xl:text-5xl flex flex-wrap'>
+        <span className="block">Write fluently.</span>
+        <span className="block">Communicate with confidence.</span>
+        <span className="block">We write for various Industries.</span>
+      </h1>
+      <p className='text-sm mt-4 mb-5'>Generate your top-notch article with no restrictions,
+      <span className='block'>create  well structured content from your mobile phone.</span></p> 
+      <Link to="/signup">
+            <button className="bg-primary text-white px-4 py-4 rounded-full hover:bg-3B2385 hover:text-white transition duration-300">
+              Sign up for free
+            </button>
+          </Link>
+    </div>
+    <div className='w-full h-full mr-20 mt-10 p-4'>
+      <img src={infoperson2} alt="infoperson2" className='justify-center' />
+    </div>
+  </div>
+</div>
+
 </div>
 
 
