@@ -17,6 +17,10 @@ import longline1 from '../assets/line1.svg';
 import longline2 from '../assets/longline2.svg';
 import infoperson from '../assets/infoperson.png';
 import infotable from '../assets/infotable.png';
+import AIicon1 from '../assets/aiicons1.svg';
+import AIicon2 from '../assets/aiicons2.svg';
+import AIicon3 from '../assets/aiicons3.svg';
+import AIicon4 from '../assets/aiicons4.svg';
 
 
 
@@ -244,20 +248,39 @@ import infotable from '../assets/infotable.png';
 {/* Boxes*/}
 <div className='flex justify-center items-center p-4 mt-10 bg-gray-300'> 
 <div className='mt-5 flex text-white justify-center items-center'>
-<div className='flex  flex-col justify-center rounded-md items-center px-3 bg-gray-500 mr-10 w-[250px] h-[250px]'>
-    <p className='justify-center'>Ai article writer</p>
-    
+<div className='flex flex-col rounded-md items-center px-3 bg-gray-900 mr-10 w-[250px] h-[250px]'>
+  <div className='bg-gray-700 mt-9  w-12 h-12 rounded-full'>
+    <img src={AIicon4} alt="aiicon" className='flex p-4' />
   </div>
-  <div className='flex justify-center  rounded-md items-center p-4 mr-10 bg-gray-500 w-[250px] h-[250px]'>
+    <p className='justify-center items-center mt-4 '>Ai article writer</p>
+    <p className=' flex mt-4 text-xs'>Exceptionally generate an hyper-personalized article that captivate the ideas of it audience</p>
 
-    <p>Article Summarizer</p>
+    </div>
+    <div className='flex  flex-col rounded-md items-center px-3 bg-gray-900 mr-10 w-[250px] h-[250px]'>
+  <div className='bg-gray-700 mt-9  w-12 h-12 rounded-full'>
+    <img src={AIicon2} alt="aiicon" className='flex p-2' />
   </div>
-  <div className='flex  justify-center  rounded-md items-center px-3 bg-gray-500 ml-10 w-[250px] h-[250px]'>
-    <p>Generate attractive topics</p>
+    <p className='justify-center items-center mt-4 '>Article Summarizer</p>
+    <p className=' flex mt-4 text-xs'>Summarize articles and other written content with ease using our Article Summarizer tool</p>
+
+    </div>
+    <div className='flex  flex-col rounded-md items-center px-3 bg-gray-900 mr-10 w-[250px] h-[250px]'>
+  <div className='bg-gray-700 mt-9  w-12 h-12 rounded-full'>
+    <img src={AIicon3} alt="aiicon" className='flex p-2' />
   </div>
-  <div className='flex  justify-center  rounded-md items-center px-3  bg-gray-500 ml-10 w-[250px] h-[250px]'>
-    <p>Seamless integration</p>
+    <p className='justify-center items-center mt-4 '>Generate attractive topics</p>
+    <p className=' flex mt-4 text-xs'>Topicalflow effortlessly generate eye catching topics in your articles across several industry.</p>
+
+    </div>
+
+    <div className='flex  flex-col rounded-md items-center px-3 bg-gray-900 mr-10 w-[250px] h-[250px]'>
+  <div className='bg-gray-700 mt-9  w-12 h-12 rounded-full'>
+    <img src={AIicon1} alt="aiicon" className='flex p-2' />
   </div>
+    <p className='justify-center items-center mt-4 '>Seamless integration</p>
+    <p className=' flex mt-4 text-xs'> Topicalflow allows you to easily publish your integrated website just in few clicks</p>
+    </div>
+
 </div>
 </div>
 </div>
