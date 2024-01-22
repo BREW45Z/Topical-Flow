@@ -310,11 +310,62 @@ import infoperson2 from '../assets/infoperson2.svg';
   </div>
 </div>
 
+{/** Next Section*/}
+<div className='items-center justify-center'>
+  <div className='  mt-20 flex justify-center'>
+    <h1 className=" items-center justify-center text-3xl font-bold primary-font text-primary  mb-2">How it Works</h1> 
+    </div>
+    <div className='flex justify-center'>
+    <h1 className=" items-center justify-center text-sm font-bold primary-font">Embark on your journey into the realm of exceptionally streamlined article writing now.</h1> 
+    </div>
+    
+      <div className='flex items-center px-24  mt-10 justify-center'>
+      <div className='flex-col px-10 '>
+      <div>
+        <h1 className='secondary-font text-primary'>01.</h1>
+       <h4 className="primary-font font-bold mb-2">Input Your Ideas</h4>
+      </div>  
+      <div>
+      <p>Enter your ideas, keywords, or drafts into our user-friendly AI interface. Whether you're starting fresh or refining existing content, our tool is here to help.</p>
+        </div>  
+    </div>
+     
+    <div className='flex-col px-10 '>
+      <div>
+        <h1 className='secondary-font text-primary'>02.</h1>
+       <h4 className="primary-font font-bold mb-2">Analyze Suggestions</h4>
+      </div>  
+      <div>
+      <p>Our smart AI delves into your input, analyzing themes. It suggests attention-grabbing headlines and fresh angles for your content.</p>
+        </div>  
+    </div>
+
+    <div className='flex-col px-10 '>
+      <div>
+        <h1 className='secondary-font text-primary'>03.</h1>
+       <h4 className="primary-font font-bold mb-2">Content Refinement</h4>
+      </div>  
+      <div>
+        <p>Witness AI's real-time magic. As you write, our tool refines grammar, style, and impact. See your writing transform.</p>
+        </div>  
+    </div>
+    <div className='flex-col px-10'>
+      <div>
+        <h1 className='secondary-font text-primary'>04.</h1>
+       <h4 className="primary-font font-bold mb-2">Preview and Approve</h4>
+      </div>  
+      <div>
+        <p>Your polished content is primed for the world. Export in different formats or seamlessly publish to preferred platforms. AI-crafted, captivating content awaits your audience.</p>
+        </div>  
+    </div>
+      </div>
+    
 </div>
 
 
+</div>
 
-  );
+);
 };
 
 export default Home;
