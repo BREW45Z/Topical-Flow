@@ -22,6 +22,7 @@ import AIicon2 from '../assets/aiicons2.svg';
 import AIicon3 from '../assets/aiicons3.svg';
 import AIicon4 from '../assets/aiicons4.svg';
 import infoperson2 from '../assets/infoperson2.svg';
+import Testimonials from '../ui/testimonials';
 
 
 
@@ -356,10 +357,21 @@ import infoperson2 from '../assets/infoperson2.svg';
       </div>  
       <div>
         <p>Your polished content is primed for the world. Export in different formats or seamlessly publish to preferred platforms. AI-crafted, captivating content awaits your audience.</p>
-        </div>  
+        </div> 
+      
     </div>
-      </div>
-    
+    </div>
+
+    <div className='flex justify-center items-center mt-20'>
+    <Link to="/signup">
+            <button className="bg-primary mb-5 text-white px-5 py-4 rounded-full hover:bg-3B2385 hover:text-white transition duration-300">
+              Get Started now
+            </button>
+          </Link>
+    </div>
+
+    {/** Testimonials */}
+    <Testimonials />
 </div>
 
 
