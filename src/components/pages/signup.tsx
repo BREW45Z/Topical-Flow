@@ -5,6 +5,12 @@ import googleicon from '../assets/google.png'
 import { Link } from 'react-router-dom';
 import handdrawn from '../assets/handdrawn.svg'
 import staricon from '../assets/staricon.svg'
+import Avatar1 from '../assets/Avatar (1).png'
+import Avatar2 from '../assets/Avatar (2).png'
+import Avatar3 from '../assets/Avatar (3).png'
+import Avatar4 from '../assets/Avatar (4).png'
+import Avatar5 from '../assets/Avatar (5).png'
+
 
 
 const Signup: React.FC = () => {
@@ -71,7 +77,7 @@ const Signup: React.FC = () => {
       </div>
 
       {/* Right side - Logo and Title */}
-      <div className="flex-1 bg-[#101828] text-white flex  flex-col justify-start justify-center  items-center">
+      <div className="flex-1 bg-[#101828]  text-white flex  flex-col justify-start justify-center  items-center">
         <img src={staricon} alt="star" className="mb-4 mr-24 " />
         <div className='justify-start px-20'>
      <h1 className="text-4xl">Start turning your <span className='block'>
@@ -81,10 +87,19 @@ const Signup: React.FC = () => {
         </span>Get started in 2 minutes.</h6>
         </div>
 
-        <div>
-          
+        <div className=' mt-10 flex justify-center items-center'>
+          <div className='flex mx-4'>
+          <img src={Avatar1} alt="avatar1" className='mr-[-10px]' />
+          <img src={Avatar2} alt="avatar2" className='mr-[-10px]' />
+          <img src={Avatar3} alt="avatar3" className='mr-[-10px]' />
+          <img src={Avatar4} alt="avatar4" className='mr-[-10px]' />
+          <img src={Avatar5} alt="avatar5" className='mr-[-10px]' />
+          </div>
+    
+          <h5>Join 40,000+ users</h5>
+
         </div>
-   
+  
       </div>
     </div>
   );

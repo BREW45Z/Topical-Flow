@@ -22,16 +22,6 @@ import AIicon2 from '../assets/aiicons2.svg';
 import AIicon3 from '../assets/aiicons3.svg';
 import AIicon4 from '../assets/aiicons4.svg';
 import infoperson2 from '../assets/infoperson2.svg';
-import Testimonials from '../ui/testimonials';
-
-
-
-
-
-
-
-
-
 
 
 
@@ -369,10 +359,9 @@ import Testimonials from '../ui/testimonials';
             </button>
           </Link>
     </div>
-
-    {/** Testimonials */}
-    <Testimonials />
-</div>
+    
+      
+      </div>
 
 
 </div>
