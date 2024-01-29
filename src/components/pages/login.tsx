@@ -10,8 +10,11 @@ const Login: React.FC = () => {
       {/* Left side - Login Form with Testimonials */}
       <div className="flex-1 bg-primary">
         <div className='flex mt-2 px-6 py-6 items-center'>
+          <Link to={'/'} className='flex'>
           <img src={logowhite} alt="" className='px-2' />
           <h1 className='text-white primary-font'>Topicalflow</h1>
+          </Link>
+        
         </div>
         <div className='w-full justify-center items-center mt-40'>
         <Testimonials />

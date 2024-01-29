@@ -10,18 +10,13 @@ import webflow from '../assets/Webflow svg.svg';
 import verizon from '../assets/Verizon svg.svg';
 import hashicorp from '../assets/HashiCorp svg.svg';
 import product from '../assets/product.svg';
-import purplebox from '../assets/purplebox.svg';
-import line1 from '../assets/line1.svg';
-import line2 from '../assets/line2.svg';
-import longline1 from '../assets/line1.svg';
-import longline2 from '../assets/longline2.svg';
-import infoperson from '../assets/infoperson.png';
-import infotable from '../assets/infotable.png';
+import dashbimg from '../assets/dasboardimg.png'
 import AIicon1 from '../assets/aiicons1.svg';
 import AIicon2 from '../assets/aiicons2.svg';
 import AIicon3 from '../assets/aiicons3.svg';
 import AIicon4 from '../assets/aiicons4.svg';
 import infoperson2 from '../assets/infoperson2.svg';
+import Pricing from '../ui/pricing';
 
 
 
@@ -130,22 +125,24 @@ import infoperson2 from '../assets/infoperson2.svg';
       </div>
 
     {/* Two Columns Section */}
-<div className=" flex justify-center items-center  bg-purple-100 mr-2 ml-2 ">
+<div className=" flex  items-center bg-purple-100">
+
   {/* Left Column */}
-  <div className=" flex flex-col items-center ml-2 mr-2">
-    <div className="px-5">
-      <h4 className="text-4xl font-bold  px-3 mb-3">About topicaflow</h4>
-      <div className='w-full flex h-full'>
-        <p className=" px-4 text-gray-400 text-2xl secondary-font flex-wrap ">
+  <div className=" flex ml-2 mr-2">
+    <div className="justify-center items-center">
+      <h4 className=" px-24 text-3xl secondary-font">About Topicaflow</h4>
+      <div className=''>
+        <p className="flex-col px-24 text-gray-500 text-2xl secondary-font ">
           "TopicalFlow" is an AI-driven content generation tool aimed
           at helping users build topical authority. The web application
           enables users to create projects within a specific niche,
           for which the AI system will then suggest relevant topics.
         </p>
+        
       </div>
-      <div className='px-4'>
+      <div className='px-20'>
       <Link to="/signup">
-            <button className=" bg-primary text-white px-7 py-4 mt-3 rounded-full hover:bg-3B2385 hover:text-white transition duration-300">
+            <button className=" bg-primary text-white  px-12 mr-4 py-4 mt-3  rounded-full hover:bg-3B2385 hover:text-white transition duration-300">
               Learn more
             </button>
           </Link>
@@ -155,80 +152,18 @@ import infoperson2 from '../assets/infoperson2.svg';
   </div>
 
  {/* Right Column */}
-<div className=" relative p-4 m px-40 mr-20">
-  <div className='py-3'>
-  <p className=' absolute mt-5 ml-10  px-14 text-primary'>topicaflow</p>
-  </div>
-  <div className="relative bg-gray-100 w-[340.35px] h-[360.58px] border-primary">
 
-    {/* Notebook Page */}
-    <div className=" top-0 left-0 right-0 bottom-0 overflow-hidden">
-      <div className="bg-gray-100 h-full w-full">
-        {/* Writing Lines */}
-        <div className="h-full flex flex-col justify-between">
-    
-        </div>
-      </div>
+ 
+  <div className='w-full'>
+    <img src={dashbimg} alt="dashboard-image" className="w-[733px] h-[569px] py-12" />
+ </div>
 
-      <div className="bottom-0 left-0 text-white mt-2 p-2 ml-4">
-      <div className='flex justify-center p-5 space-x-10 mt-3 items-center'>
-        <div>
-          <p className='justify-center text-primary text-gray-500'>topicalflow</p>
-        <img src={purplebox} alt="box" className="w-24 h-auto opacity-70 hover:opacity-100" />
-        </div>
-        <div>
-        <img src={line2} alt="product" className="w-full h-auto mb-4 opacity-70 hover:opacity-100" />
-        <img src={line1} alt="product" className="w-24 h-auto opacity-70 hover:opacity-100" />
-       
-        </div>
-        
-         </div>
-
-      </div>
-   
-       <div className=' relative mt-3 items-center justify-center px-5 w-full'>
-        <img src={longline2} alt="product" className=" flex w-full mb-4 h-full opacity-70 hover:opacity-100" />
-        <img src={longline1} alt="product" className=" flex  w-40 h-auto mb-4 opacity-70 hover:opacity-100" />
-        <img src={longline2} alt="product" className=" flex w-full h-auto mb-4 opacity-70 hover:opacity-100" />
-        <img src={longline1} alt="product" className=" flex  w-40 h-auto mb-4 opacity-70 hover:opacity-100" />
-        <img src={longline1} alt="product" className=" flex  w-40 h-auto mb-4 opacity-70 hover:opacity-100" />
-        </div>
-
-
-        {/*edge of notebook */}
-    
-    </div>
-        </div>
-        <div className=" absolute w-[150px] h-[100px] top-2/3  right-1 left-1 ml-10 border-primary flex bg-white">
-      <div className='flex justify-center p-5  items-center'>
-        <div>
-        <img src={line1} alt="line1" className="w-24 h-auto opacity-70  mb-3 hover:opacity-100" />
-        <img src={line1} alt="line1" className="w-24 h-auto opacity-70 hover:opacity-100" />
-
-       
-        </div>
-        </div>
-      </div>
-      </div>
-
-
-  </div>
-
+</div>
 
     {/*Next Section*/}
-<div className='flex p-5 items-center justify-center'>
-        <div className='flex space-x-20'>
-          <div className='items-center mt-4'>
-          <img src={infoperson} alt="infoperson" className="  mt-10 mr-20 w-[500.43px] h-[310.75px]  hover:opacity-100" />
-          </div>
-          <div className='mt-7'>
-          <img src={infotable} alt="infoperson" className="  mt-5 w-[460.43px] h-[360.75px] hover:opacity-100" />
-          </div>
-           </div>
-          </div>
           {/*Description and Specifications section*/}
-<div className='justify-center items-center bg-gray-100 mt-5'>
-<div className=' flex items-center justify-center mt-10'>
+<div className='justify-center items-center bg-gray-100'>
+<div className=' flex items-center justify-center'>
   <h1 className='text-3xl primary-font items-center font-bold mt-12'>Discover more with Topicalflow</h1>
   </div>
  <div className='flex justify-center items-center bg-gray-100 mt-2'>
@@ -278,30 +213,9 @@ import infoperson2 from '../assets/infoperson2.svg';
 
 
 </div>
-{/** Next Section*/}
-<div className='flex p-4 bg-gray-100'>
-  <div className='flex items-center justify-center mt-4'>
-    <div className=' m-20 text-bold primary-font text-base'>
-      <h1 className='text-lg md:text-3xl lg:text-4xl xl:text-5xl flex flex-wrap'>
-        <span className="block">Write fluently.</span>
-        <span className="block">Communicate with confidence.</span>
-        <span className="block">We write for various Industries.</span>
-      </h1>
-      <p className='text-sm mt-4 mb-5'>Generate your top-notch article with no restrictions,
-      <span className='block'>create  well structured content from your mobile phone.</span></p> 
-      <Link to="/signup">
-            <button className="bg-primary text-white px-4 py-4 rounded-full hover:bg-3B2385 hover:text-white transition duration-300">
-              Sign up for free
-            </button>
-          </Link>
-    </div>
-    <div className='w-full h-full mr-20 mt-10 p-4'>
-      <img src={infoperson2} alt="infoperson2" className='justify-center' />
-    </div>
-  </div>
-</div>
 
-{/** Next Section*/}
+
+
 <div className='items-center justify-center'>
   <div className='  mt-20 flex justify-center'>
     <h1 className=" items-center justify-center text-3xl font-bold primary-font text-primary  mb-2">How it Works</h1> 
@@ -354,7 +268,7 @@ import infoperson2 from '../assets/infoperson2.svg';
 
     <div className='flex justify-center items-center mt-20'>
     <Link to="/signup">
-            <button className="bg-primary mb-5 text-white px-5 py-4 rounded-full hover:bg-3B2385 hover:text-white transition duration-300">
+            <button className="bg-primary mb-5 text-white px-14 py-3 text-xl rounded-full hover:bg-3B2385 hover:text-white transition duration-300">
               Get Started now
             </button>
           </Link>
@@ -363,6 +277,33 @@ import infoperson2 from '../assets/infoperson2.svg';
       
       </div>
 
+
+{/** Next Section*/}
+<div className='flex p-4 bg-gray-100'>
+  <div className='flex items-center justify-center mt-4'>
+    <div className=' m-20 text-bold primary-font text-base'>
+      <h1 className='text-lg md:text-3xl lg:text-4xl xl:text-5xl flex flex-wrap'>
+        <span className="block">Write fluently.</span>
+        <span className="block">Communicate with confidence.</span>
+        <span className="block">We write for various Industries.</span>
+      </h1>
+      <p className='text-sm mt-4 mb-5'>Generate your top-notch article with no restrictions,
+      <span className='block'>create  well structured content from your mobile phone.</span></p> 
+      <Link to="/signup">
+            <button className="bg-primary text-white px-4 py-4 rounded-full hover:bg-3B2385 hover:text-white transition duration-300">
+              Sign up for free
+            </button>
+          </Link>
+    </div>
+    <div className='w-full h-full mr-20 mt-10 p-4'>
+      <img src={infoperson2} alt="infoperson2" className='justify-center' />
+    </div>
+  </div>
+</div>
+
+{/** Next Section - Pricing */}
+
+<Pricing />
 
 </div>
 
