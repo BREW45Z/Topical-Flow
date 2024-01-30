@@ -2,7 +2,7 @@ import React from 'react';
 import logowhite from '../assets/Logowhite.svg';
 import googleicon from '../assets/google.png';
 import { Link } from 'react-router-dom';
-import Testimonials from '../shared/testimonials'; // Adjust the path as needed
+import Testimonials from '../ui/testimonials'; // Adjust the path as needed
 
 const Login: React.FC = () => {
   return (

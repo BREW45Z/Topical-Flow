@@ -17,6 +17,8 @@ import AIicon3 from '../assets/aiicons3.svg';
 import AIicon4 from '../assets/aiicons4.svg';
 import infoperson2 from '../assets/infoperson2.svg';
 import Pricing from '../ui/pricing';
+import Testimonials from '../ui/testimonials';
+import Carousel from '../ui/home-carousel';
 
 
 
@@ -302,9 +304,12 @@ import Pricing from '../ui/pricing';
 </div>
 
 {/** Next Section - Pricing */}
-
+<div>
 <Pricing />
-
+</div>
+<section>
+  <Carousel />
+ </section>
 </div>
 
 );
