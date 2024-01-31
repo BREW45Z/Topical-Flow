@@ -19,6 +19,7 @@ import infoperson2 from '../assets/infoperson2.svg';
 import Pricing from '../ui/pricing';
 import Testimonials from '../ui/testimonials';
 import Carousel from '../ui/home-carousel';
+import Footer from '../ui/footer';
 
 
 
@@ -310,6 +311,26 @@ import Carousel from '../ui/home-carousel';
 <section>
   <Carousel />
  </section>
+
+ <section>
+  <div className='flex justify-center'>
+    <h1 className=' primary-font text-black p-4 text-6xl text-center mt-20 items-center justify-center'>Be part of the future of the <span className='block '> Topicalflow
+      </span></h1>
+  </div>
+  <div>
+    <h6 className='justify-center p-2  text-purple-500 flex secondary-font'>Unleash the power of AI within topicalflow. Upgrade your <span className='block'> productivity with topicalflow</span></h6>
+  </div>
+  <div>
+    <div className='bg-bg-gradient-to-r from-blue-500 via-purple-500 to-pink py-3 px-3'>
+
+
+    </div>
+  </div>
+ </section>
+
+ <footer>
+  <Footer />
+ </footer>
 </div>
 
 );
