@@ -46,18 +46,28 @@ const Footer = () => {
         {/* Column 2 */}
         <div className="w-1/2 mt-3">
           {/* Lists of web pages */}
-          <div className="flex px=5">
-            <ul className="px-4">
-              <li className="mb-2">Home</li>
-              <li className="mb-2">About Us</li>
-              <li className="mb-2">Services</li>
+          <div className="flex">
+            <ul className="px-14">
+            <h5 className='font-bold secondary-font mb-5'>Get Started</h5>
+              <li className="mb-2">Sign up</li>
+              <li className="mb-2">Login</li>
+              <li className="mb-2">Pricing</li>
+              <li className="mb-2">Billing</li>
+
             </ul>
-            <ul className="px-4">
-              <li className="mb-2">Contact</li>
+            <ul className="px-14">
+            <h5 className='font-bold secondary-font mb-5'>Company</h5>
+              <li className="mb-2">About</li>
+              <li className="mb-2">Contact us</li>
+              <li className="mb-2">Terms and Condition</li>
+              <li className="mb-2">Privacy Policy</li>
               <li className="mb-2">Blog</li>
-              <li className="mb-2">FAQ</li>
+
+
+
             </ul>
-            <ul c>
+            <ul className='px-14'>
+            <h5 className='font-bold secondary-font mb-5'>Support</h5>
               <li className="mb-2">Privacy Policy</li>
               <li className="mb-2">Terms of Service</li>
               <li className="mb-2">Sitemap</li>

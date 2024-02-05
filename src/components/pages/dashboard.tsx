@@ -1,21 +1,58 @@
 import React from 'react';
 import Sidebar from '../shared/sidebar';
+import PlusWhite from '../assets/whiteplus.svg';
+import arrowright from '../assets/arrow-right.svg'
 
-const PageWithSidebar: React.FC = () => {
+
+const Dashboard: React.FC = () => {
   return (
     <div className="flex">
       {/* Sidebar */}
-      <div className="bg-white shadow-md border-r border-gray-300 h-screen w-1/5 fixed">
+      <div>
         <Sidebar />
       </div>
 
       {/* Main Content */}
       <div className="flex-1 p-4">
-        {/* Your main content goes here */}
-        <h1>Main Content</h1>
+        {/* Section 1 */}
+        <div className='flex justify-between items-center '>
+          <div className='justify-center items-center py-2 px-4'>
+            <h1 className='text-4xl secondary-font '>Welcome Joseph</h1>
+            <h6 className='text-sm py-2'>Track, manage and schedule your articles.</h6>
+          </div>
+          <div className='px-3'>
+            <button className=' w-48 h-12 hover text-white rounded-lg bg-violet-500'>
+              <div className=' p-1 inline-flex justify-between items-center'>
+              <img src={PlusWhite} alt="plusicon" />
+              <h1 className='px-4 justify-center'>New Article</h1></div>
+            
+            </button>
+          </div>
+        </div>
+
+        {/** next section */}
+        <div>
+          <div className="bg-violet-500 h-400 w-full text-white secondary-font rounded-md p-10">
+            <div className='py-4  justify-center'>
+            <h1 className='text-2xl'>Unlock the power of writing with Topical flow</h1>
+            <h6 className='text-sm'>Revolutionize your content creation with topical flow: The ultimate article writing tool</h6>
+              
+            </div>
+            <div className='flex  mt-10 items-center gap-48'>
+            <h1 className='text-3xl'>6 Articles left</h1>
+            <button className='boarder-purple-500 rounded-md outline w-45 py-3 px-3 border-3 inline-flex gap-3  justify-center items-center'>
+              Buy more articles
+              <img src={arrowright} alt="" />
+             </button>
+
+            </div>
+            
+          </div>
+        </div>
+
       </div>
     </div>
   );
 };
 
-export default PageWithSidebar;
+export default Dashboard;
