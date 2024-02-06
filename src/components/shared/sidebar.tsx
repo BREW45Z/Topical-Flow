@@ -1,15 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import plusicon from '../assets/plus.svg'
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.svg'
 
 
 const Sidebar: React.FC = () => {
+
+  const [activeItem, setActiveItem] = useState<string>('');
+
+  const handleItemClick = (itemName: string) => {
+    setActiveItem(itemName);
+
+  };
+
+
   return (
     <div className="w-72 h-80 pt-2 flex-col justify-start items-start gap-2 inline-flex">
-  <div className="w- px-5 justify-center items-center gap-2 inline-flex">
+  <div className=" px-5 justify-center items-center gap-2 inline-flex ">
     <div className="w-8 h-8  mt-7 relative" />
-    <img src={logo} alt="" />
+    <img src={logo} alt="logo" />
     <div className=" primary-font text-primary leading-tight">Topicalflow</div>
   </div>
   <div className=" flex-col justify-start items-start gap-5 flex">
@@ -18,7 +27,7 @@ const Sidebar: React.FC = () => {
         <div className="grow shrink basis-0 self-stretch px-3.5 py-2.5 bg-white rounded-lg shadow border border-violet-500 justify-start items-center gap-2 inline-flex">
           <div className="grow shrink basis-0 h-6 justify-start items-center gap-2 flex">
             <div className="w-5 h-5 relative" />
-            <div className="text-slate-700 text-base font-medium font-['Inter'] leading-normal">New article</div>
+            <div className=" text-primary">New article</div>
             <img src={plusicon} alt="plus-icon"  className='px-5'/>
 
           </div>
@@ -27,89 +36,130 @@ const Sidebar: React.FC = () => {
     </div>
     <div className="self-stretch h-72 px-4 flex-col justify-start items-start flex">
       <div className="self-stretch h-32 flex-col justify-start items-start flex">
-        <div className="self-stretch px-3 py-2 bg-white rounded-md justify-start items-center gap-28 inline-flex">
-          <div className="justify-start items-center gap-2 flex">
+        <div className={`self-stretch px-3 py-2 bg-white rounded-md justify-start items-center gap-28 inline-flex ${
+          activeItem === 'home' ? 'bg-gray-200' : ''
+        }`}
+        >
+          <div className="justify-start items-center gap-2 flex"  onClick={() => handleItemClick('home')}>
             <div className="w-6 h-6 justify-center items-center flex">
               <div className="w-6 h-6 relative">
               </div>
             </div>
             <Link to="/dashboard">
-            <div className=" text-base text-md secondary-font">Home</div>
+            <div className=" text-primary text-sm secondary-font">Home</div>
             </Link>
           </div>
         </div>
-        <div className=" px-3 py-2 rounded-md justify-start items-center inline-flex">
-          <div className="justify-start items-center gap-3 flex">
+
+          
+        <div className={`self-stretch px-3 py-2 bg-white rounded-md justify-start items-center gap-28 inline-flex ${
+          activeItem === 'generate-article' ? 'bg-gray-200' : ''
+        }`}
+        >
+          <div className="justify-start items-center gap-2 flex"  onClick={() => handleItemClick('generate-article')}>
             <div className="w-6 h-6 justify-center items-center flex">
               <div className="w-6 h-6 relative">
               </div>
             </div>
-            <div className=" text-md seondary-font">Generate article</div>
+            <Link to="/generate-article">
+            <div className=" text-primary text-sm secondary-font">Generate article</div>
+            </Link>
           </div>
         </div>
-        <div className=" px-3 py-2 bg-white rounded-md justify-start items-center gap-28 inline-flex">
-          <div className="justify-start items-center gap-3 flex">
+       
+        <div className={`self-stretch px-3 py-2 bg-white rounded-md justify-start items-center gap-28 inline-flex ${
+          activeItem === 'project' ? 'bg-gray-200' : ''
+        }`}
+        >
+          <div className="justify-start items-center gap-2 flex"  onClick={() => handleItemClick('project')}>
             <div className="w-6 h-6 justify-center items-center flex">
               <div className="w-6 h-6 relative">
               </div>
             </div>
-            <div className="text-slate-700 text-base font-medium font-['Inter'] leading-normal">Project</div>
+            <Link to="/project">
+            <div className=" text-primary text-sm secondary-font">Project</div>
+            </Link>
           </div>
         </div>
       </div>
       <div className="self-stretch h-32 flex-col justify-start items-start gap-1 flex">
-        <div className="self-stretch px-3 py-2 bg-white rounded-md justify-start items-center gap-28 inline-flex">
-          <div className="justify-start items-center gap-3 flex">
+      <div className={`self-stretch px-3 py-2 bg-white rounded-md justify-start items-center gap-28 inline-flex ${
+          activeItem === 'my-account' ? 'bg-gray-200' : ''
+        }`}
+        >
+          <div className="justify-start items-center gap-2 flex"  onClick={() => handleItemClick('my-account')}>
             <div className="w-6 h-6 justify-center items-center flex">
               <div className="w-6 h-6 relative">
               </div>
             </div>
-            <div className="text-slate-700 text-base font-medium font-['Inter'] leading-normal">My account</div>
-          </div>
-        </div>
-        <div className="self-stretch px-3 py-2 bg-white rounded-md justify-start items-center gap-28 inline-flex">
-          <div className="justify-start items-center gap-3 flex">
-            <div className="w-6 h-6 justify-center items-center flex">
-              <div className="w-6 h-6 relative">
-              </div>
-            </div>
-            <div className="text-slate-700 text-base font-medium font-['Inter'] leading-normal">Integration</div>
-          </div>
-        </div>
-        <div className="self-stretch px-3 py-2 bg-white rounded-md justify-start items-center gap-28 inline-flex">
-          <div className="justify-start items-center gap-3 flex">
-            <div className="w-6 h-6 justify-center items-center flex">
-              <div className="w-6 h-6 relative">
-              </div>
-            </div>
-            <div className="text-slate-700 text-base font-medium font-['Inter'] leading-normal">Billing</div>
+            <Link to="/my-account">
+            <div className=" text-primary text-sm secondary-font">My account</div>
+            </Link>
           </div>
         </div>
 
-        <div className="self-stretch px-3 py-2 bg-white rounded-md justify-start items-center gap-28 inline-flex">
-          <div className="justify-start items-center gap-3 flex">
+        <div className={`self-stretch px-3 py-2 bg-white rounded-md justify-start items-center gap-28 inline-flex ${
+          activeItem === 'integration' ? 'bg-gray-200' : ''
+        }`}
+        >
+          <div className="justify-start items-center gap-2 flex"  onClick={() => handleItemClick('integration')}>
             <div className="w-6 h-6 justify-center items-center flex">
               <div className="w-6 h-6 relative">
               </div>
             </div>
-            <div className="text-slate-700 text-base font-medium font-['Inter'] leading-normal">Support</div>
+            <Link to="/integration">
+            <div className=" text-primary text-sm secondary-font">Integration</div>
+            </Link>
           </div>
         </div>
 
-        <div className="self-stretch px-3 py-2 bg-white rounded-md justify-start items-center gap-28 inline-flex">
-          <div className="justify-start items-center gap-3 flex">
+        <div className={`self-stretch px-3 py-2 bg-white rounded-md justify-start items-center gap-28 inline-flex ${
+          activeItem === 'support' ? 'bg-gray-200' : ''
+        }`}
+        >
+          <div className="justify-start items-center gap-2 flex"  onClick={() => handleItemClick('billing')}>
             <div className="w-6 h-6 justify-center items-center flex">
               <div className="w-6 h-6 relative">
               </div>
             </div>
-            <div className="text-slate-700 text-base font-medium font-['Inter'] leading-normal">Settings</div>
+            <Link to="/support">
+            <div className=" text-primary text-sm secondary-font">Billing</div>
+            </Link>
           </div>
         </div>
 
+        <div className={`self-stretch px-3 py-2 bg-white rounded-md justify-start items-center gap-28 inline-flex ${
+          activeItem === 'support' ? 'bg-gray-200' : ''
+        }`}
+        >
+          <div className="justify-start items-center gap-2 flex"  onClick={() => handleItemClick('home')}>
+            <div className="w-6 h-6 justify-center items-center flex">
+              <div className="w-6 h-6 relative">
+              </div>
+            </div>
+            <Link to="/support">
+            <div className=" text-primary text-sm secondary-font">Support</div>
+            </Link>
+          </div>
+        </div>
+        <div className={`self-stretch px-3 py-2 bg-white rounded-md justify-start items-center gap-28 inline-flex ${
+          activeItem === 'setting' ? 'bg-gray-200' : ''
+        }`}
+        >
+          <div className="justify-start items-center gap-2 flex"  onClick={() => handleItemClick('setting')}>
+            <div className="w-6 h-6 justify-center items-center flex">
+              <div className="w-6 h-6 relative">
+              </div>
+            </div>
+            <Link to="/setting">
+            <div className=" text-primary text-sm secondary-font">Setting</div>
+            </Link>
+          </div>
+        </div>
 
-<section>
+     <section>
      {/** Nav featured Card */}
-     <div className="NavFeaturedCard w-60 h-40 px-5 py-5 bg-gray-100 rounded-lg flex-col justify-center mt-30 items-start gap-4 inline-flex">
+     <div className="NavFeaturedCard w-60 h-40 px-5 py-5 bg-gray-100 rounded-lg flex-col justify-center mt-5 items-start gap-4 inline-flex">
   <div className="TextAndSupportingText self-stretch h-16 flex-col justify-start items-start gap-1 flex">
     <div className="Title self-stretch justify-start items-start gap-1 inline-flex">
       <div className="Text grow shrink basis-0 text-gray-900 text-sm font-medium font-['Inter'] leading-tight">Used credit</div>

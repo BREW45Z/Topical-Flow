@@ -21,7 +21,7 @@ const Dashboard: React.FC = () => {
         <div className='flex justify-between items-center '>
           <div className='justify-center items-center py-2 px-4'>
             <h1 className='text-4xl secondary-font '>Welcome Joseph</h1>
-            <h6 className='text-sm py-2'>Track, manage and schedule your articles.</h6>
+            <h6 className='text-sm py-2 text-primary '>Track, manage and schedule your articles.</h6>
           </div>
           <div className='px-3'>
             <button className=' w-48 h-12 hover text-white rounded-lg bg-violet-500'>
