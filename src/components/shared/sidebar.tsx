@@ -1,16 +1,18 @@
 import React from 'react';
 import plusicon from '../assets/plus.svg'
 import { Link } from 'react-router-dom';
+import logo from '../assets/logo.svg'
 
 
 const Sidebar: React.FC = () => {
   return (
-    <div className="w-72 h-80 pt-2 flex-col justify-start items-start gap-5 inline-flex">
+    <div className="w-72 h-80 pt-2 flex-col justify-start items-start gap-2 inline-flex">
   <div className="w- px-5 justify-center items-center gap-2 inline-flex">
-    <div className="w-8 h-8 relative" />
-    <div className="text-black text-xl font-normal font-['Droid Serif'] leading-tight">Topicalflow</div>
+    <div className="w-8 h-8  mt-7 relative" />
+    <img src={logo} alt="" />
+    <div className=" primary-font text-primary leading-tight">Topicalflow</div>
   </div>
-  <div className="self-stretch h-96 flex-col justify-start items-start gap-16 flex">
+  <div className=" flex-col justify-start items-start gap-5 flex">
     <div className="self-stretch h-11 px-6 flex-col justify-start items-start flex">
       <div className="w-56 justify-center items-center inline-flex">
         <div className="grow shrink basis-0 self-stretch px-3.5 py-2.5 bg-white rounded-lg shadow border border-violet-500 justify-start items-center gap-2 inline-flex">
@@ -26,26 +28,26 @@ const Sidebar: React.FC = () => {
     <div className="self-stretch h-72 px-4 flex-col justify-start items-start flex">
       <div className="self-stretch h-32 flex-col justify-start items-start flex">
         <div className="self-stretch px-3 py-2 bg-white rounded-md justify-start items-center gap-28 inline-flex">
-          <div className="justify-start items-center gap-3 flex">
+          <div className="justify-start items-center gap-2 flex">
             <div className="w-6 h-6 justify-center items-center flex">
               <div className="w-6 h-6 relative">
               </div>
             </div>
             <Link to="/dashboard">
-            <div className="text-slate-700 text-base font-medium font-['Inter'] leading-normal">Home</div>
+            <div className=" text-base text-md secondary-font">Home</div>
             </Link>
           </div>
         </div>
-        <div className="self-stretch px-3 py-2 bg-gray-100 rounded-md justify-start items-center gap-28 inline-flex">
+        <div className=" px-3 py-2 rounded-md justify-start items-center inline-flex">
           <div className="justify-start items-center gap-3 flex">
             <div className="w-6 h-6 justify-center items-center flex">
               <div className="w-6 h-6 relative">
               </div>
             </div>
-            <div className="text-slate-700 text-base font-medium font-['Inter'] leading-normal">Generate article</div>
+            <div className=" text-md seondary-font">Generate article</div>
           </div>
         </div>
-        <div className="self-stretch px-3 py-2 bg-white rounded-md justify-start items-center gap-28 inline-flex">
+        <div className=" px-3 py-2 bg-white rounded-md justify-start items-center gap-28 inline-flex">
           <div className="justify-start items-center gap-3 flex">
             <div className="w-6 h-6 justify-center items-center flex">
               <div className="w-6 h-6 relative">
