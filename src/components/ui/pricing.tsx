@@ -7,7 +7,7 @@ const Pricing = () => {
         borderRadius: '40px', // You can adjust this value to increase or decrease curvature
       };
   return (
-    <section className='text-gray-500 '>
+    <section className='text-base'>
         
         <div className='secondary-font p-5'>
             <h5 className='font-bold mb-5 mt-5  text-primary items-center justify-center flex'>Pricing</h5>
@@ -15,7 +15,7 @@ const Pricing = () => {
             <h6 className='font-bold text-purple-500 mb-1 items-center justify-center flex'>Simple, transparent pricing that grows with you. Try any plan free for 30 days.</h6>
 
         </div>
-        <div className='flex justify-center items-center p-10]'>
+        <div className='flex justify-center items-center p-10 lg:w-full'>
 
       <div className=' mt-5 justify-center items-center'>
         <div className='border-2 w-[365px] h-[620px] p-10  rounded-lg' style={customStyles}>
@@ -140,7 +140,7 @@ const Pricing = () => {
       </div>
       {/**3RD */}
 
-      <div className='p-5 mt-5 justify-center items-center'>
+      <div className='p-5 mt-5 justify-center items-center '>
         <div className='border-2 w-[365px] h-[620px] p-10  rounded-lg' style={customStyles}>
           <div className='flex justify-between'>
             <h5 className='secondary-font mr-10 justify-start text-gray-500'>Enterprise plan</h5>

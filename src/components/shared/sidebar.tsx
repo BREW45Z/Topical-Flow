@@ -15,7 +15,8 @@ const Sidebar: React.FC = () => {
 
 
   return (
-    <div className="w-72 h-80 pt-2 flex-col justify-start items-start gap-2 inline-flex">
+    <section>
+    <div className="w-72 h-80 pt-2 flex-col  justify-start items-start gap-2 inline-flex">
   <div className=" px-5 justify-center items-center gap-2 inline-flex ">
     <div className="w-8 h-8  mt-7 relative" />
     <img src={logo} alt="logo" />
@@ -36,7 +37,7 @@ const Sidebar: React.FC = () => {
     </div>
     <div className="self-stretch h-72 px-4 flex-col justify-start items-start flex">
       <div className="self-stretch h-32 flex-col justify-start items-start flex">
-        <div className={`self-stretch px-3 py-2 bg-white rounded-md justify-start items-center gap-28 inline-flex ${
+        <div className={`self-stretch px-3 py-2 rounded-md justify-start items-center gap-28 inline-flex ${
           activeItem === 'home' ? 'bg-gray-200' : ''
         }`}
         >
@@ -52,7 +53,7 @@ const Sidebar: React.FC = () => {
         </div>
 
           
-        <div className={`self-stretch px-3 py-2 bg-white rounded-md justify-start items-center gap-28 inline-flex ${
+        <div className={`self-stretch px-3 py-2  rounded-md justify-start items-center gap-28 inline-flex ${
           activeItem === 'generate-article' ? 'bg-gray-200' : ''
         }`}
         >
@@ -67,7 +68,7 @@ const Sidebar: React.FC = () => {
           </div>
         </div>
        
-        <div className={`self-stretch px-3 py-2 bg-white rounded-md justify-start items-center gap-28 inline-flex ${
+        <div className={`self-stretch px-3 py-2  rounded-md justify-start items-center gap-28 inline-flex ${
           activeItem === 'project' ? 'bg-gray-200' : ''
         }`}
         >
@@ -83,8 +84,8 @@ const Sidebar: React.FC = () => {
         </div>
       </div>
       <div className="self-stretch h-32 flex-col justify-start items-start gap-1 flex">
-      <div className={`self-stretch px-3 py-2 bg-white rounded-md justify-start items-center gap-28 inline-flex ${
-          activeItem === 'my-account' ? 'bg-gray-200' : ''
+      <div className={`self-stretch px-3 py-2 rounded-md justify-start items-center gap-28 inline-flex ${
+          activeItem === 'my-account' ? 'bg-gray-500' : ''
         }`}
         >
           <div className="justify-start items-center gap-2 flex"  onClick={() => handleItemClick('my-account')}>
@@ -98,7 +99,7 @@ const Sidebar: React.FC = () => {
           </div>
         </div>
 
-        <div className={`self-stretch px-3 py-2 bg-white rounded-md justify-start items-center gap-28 inline-flex ${
+        <div className={`self-stretch px-3 py-2 rounded-md justify-start items-center gap-28 inline-flex ${
           activeItem === 'integration' ? 'bg-gray-200' : ''
         }`}
         >
@@ -113,7 +114,7 @@ const Sidebar: React.FC = () => {
           </div>
         </div>
 
-        <div className={`self-stretch px-3 py-2 bg-white rounded-md justify-start items-center gap-28 inline-flex ${
+        <div className={`self-stretch px-3 py-2 rounded-md justify-start items-center gap-28 inline-flex ${
           activeItem === 'support' ? 'bg-gray-200' : ''
         }`}
         >
@@ -128,7 +129,7 @@ const Sidebar: React.FC = () => {
           </div>
         </div>
 
-        <div className={`self-stretch px-3 py-2 bg-white rounded-md justify-start items-center gap-28 inline-flex ${
+        <div className={`self-stretch px-3 py-2 rounded-md justify-start items-center gap-28 inline-flex ${
           activeItem === 'support' ? 'bg-gray-200' : ''
         }`}
         >
@@ -142,7 +143,7 @@ const Sidebar: React.FC = () => {
             </Link>
           </div>
         </div>
-        <div className={`self-stretch px-3 py-2 bg-white rounded-md justify-start items-center gap-28 inline-flex ${
+        <div className={`self-stretch px-3 py-2 rounded-md justify-start items-center gap-28 inline-flex ${
           activeItem === 'setting' ? 'bg-gray-200' : ''
         }`}
         >
@@ -212,6 +213,7 @@ const Sidebar: React.FC = () => {
     </div>
   </div>
 </div>
+</section>
 
    )
 

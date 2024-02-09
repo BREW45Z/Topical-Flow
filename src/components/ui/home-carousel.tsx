@@ -43,7 +43,7 @@ const Carousel = () => {
   };
 
   return (
-    <section className="bg-yellow-50 py-10">
+    <section className="bg-yellow-50 py-10 md:w/14 ">
       <div className='mb-3'>
         <h1 className='  px-20 secondary-font text-black-200 text-4xl '>Our Customer Feedback</h1>
         <h5 className=' px-20 primary-font text-sm'>Don’t take our word for it. Trust our customers</h5>
@@ -51,7 +51,7 @@ const Carousel = () => {
       <div className="max-w-screen-xl mx-auto">
         <Slider {...settings}>
           {/* Card 1 */}
-          <div className="w-full px-4">
+          <div className="w-full px-4 lg:w-1/2 md:w-full sm:w-full">
             <div className=" items-center bg-white p-8 rounded-lg shadow">
               <div className='flex justify-between'>
                 <div className=''>
@@ -75,7 +75,7 @@ const Carousel = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="w-full px-4">
+          <div className="w-full px-4 lg:w-full md:w-full">
             <div className=" items-center bg-white p-8 rounded-lg shadow">
               <div className='flex justify-between'>
                 <div className=''>
@@ -98,7 +98,7 @@ const Carousel = () => {
             </div>
           </div>
           {/* Card 3 */}
-          <div className="w-full px-4">
+          <div className="w-full px-4 sm:w-full">
             <div className=" items-center bg-white p-8 rounded-lg shadow">
               <div className='flex justify-between'>
                 <div className=''>
