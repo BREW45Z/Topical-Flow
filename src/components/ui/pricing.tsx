@@ -1,4 +1,3 @@
-import React from 'react';
 import checkicon from '../assets/checkicon.svg'
 
 
@@ -15,9 +14,9 @@ const Pricing = () => {
             <h6 className='font-bold text-purple-500 mb-1 items-center justify-center flex'>Simple, transparent pricing that grows with you. Try any plan free for 30 days.</h6>
 
         </div>
-        <div className='flex justify-center items-center p-10 lg:w-full'>
+        <div className='flex justify-center items-center p-10 lg:w-full md:w-full flex-wrap'>
 
-      <div className=' mt-5 justify-center items-center'>
+      <div className=' mt-5 justify-center items-center '>
         <div className='border-2 w-[365px] h-[620px] p-10  rounded-lg' style={customStyles}>
           <div className='flex justify-between'>
             <h5 className='secondary-font mr-10 justify-start text-gray-500'>Basic plan</h5>
@@ -101,35 +100,35 @@ const Pricing = () => {
 
             <div className='text-sm primary-font'>
                 <h6 className='text-sm'>FEATURES</h6>
-                <h6>Everything in <span><strong>Starter</strong></span> plus...</h6>
+                <h6>Everything in <span><strong>Basic</strong></span> plus...</h6>
                 <div className=' primary-font flex'>
                     <div className='flex mt-5 py-1'>
                     <img src={checkicon} alt="checkicon"  className=''/>
-                    <h6 className='px-3'>2 article per month</h6>
+                    <h6 className='px-3'>25 article per month</h6>
                     </div>
                 </div>
                 <div className='flex'>
+                    <div className='flex mt-5 py-1'>
+                    <img src={checkicon} alt="checkicon"  className=''/>
+                    <h6 className='px-3'>$2.5 per article for extra</h6>
+                    </div>
+                </div>
+                <div className=' flex'>
                     <div className='flex mt-5 py-1'>
                     <img src={checkicon} alt="checkicon"  className=''/>
                     <h6 className='px-3'>Regeneration</h6>
                     </div>
                 </div>
-                <div className=' flex'>
-                    <div className='flex mt-5 py-1'>
-                    <img src={checkicon} alt="checkicon"  className=''/>
-                    <h6 className='px-3'>Support over 100 language</h6>
-                    </div>
-                </div>
                 <div className='flex'>
                     <div className='flex mt-5 py-1'>
                     <img src={checkicon} alt="checkicon"  className=''/>
-                    <h6 className='px-3'>20GB individual data each user</h6>
+                    <h6 className='px-3'>Custom tones</h6>
                     </div>
                 </div>
                 <div className=' flex'>
                     <div className='flex mt-5 py-1'>
                     <img src={checkicon} alt="checkicon"  className=''/>
-                    <h6 className='px-3'>Basic chat and email support</h6>
+                    <h6 className='px-3'>Priority chat and email support</h6>
                     </div>
                 </div>
             
@@ -161,17 +160,17 @@ const Pricing = () => {
 
             <div className='text-sm primary-font'>
                 <h6 className='text-sm'>FEATURES</h6>
-                <h6>Everything in <span><strong>Starter</strong></span> plus...</h6>
+                <h6>Everything in <span><strong>Business</strong></span> plus...</h6>
                 <div className=' primary-font flex'>
                     <div className='flex mt-5 py-1'>
                     <img src={checkicon} alt="checkicon"  className=''/>
-                    <h6 className='px-3'>2 article per month</h6>
+                    <h6 className='px-3'>Customer support</h6>
                     </div>
                 </div>
                 <div className='flex'>
                     <div className='flex mt-5 py-1'>
                     <img src={checkicon} alt="checkicon"  className=''/>
-                    <h6 className='px-3'>Regeneration</h6>
+                    <h6 className='px-3'>Custom tones</h6>
                     </div>
                 </div>
                 <div className=' flex'>
@@ -183,13 +182,13 @@ const Pricing = () => {
                 <div className='flex'>
                     <div className='flex mt-5 py-1'>
                     <img src={checkicon} alt="checkicon"  className=''/>
-                    <h6 className='px-3'>20GB individual data each user</h6>
+                    <h6 className='px-3'>Unlimited individual data</h6>
                     </div>
                 </div>
                 <div className=' flex'>
                     <div className='flex mt-5 py-1'>
                     <img src={checkicon} alt="checkicon"  className=''/>
-                    <h6 className='px-3'>Basic chat and email support</h6>
+                    <h6 className='px-3'>Personalised+priotity service</h6>
                     </div>
                 </div>
             

@@ -10,7 +10,7 @@ import avatar3 from '../assets/Avatar (3).png'
 const NextArrow: React.FC<CustomArrowProps> = ({ style, onClick }) => {
   return (
     <div 
-      className="slick-arrow next-arrow absolute top-20 right-4 cursor-pointer bg-white px-5 py-2  mb-10 rounded-md shadow-md bg-transparent hover:bg-gray-100 transition"
+      className="slick-arrow next-arrow absolute flex top-20 right-4 cursor-pointer bg-white px-3 py-2  mb-10 rounded-md shadow-md bg-transparent hover:bg-gray-100 transition"
       style={{ ...style, color: '' }}
       onClick={onClick}
     >
@@ -22,7 +22,7 @@ const NextArrow: React.FC<CustomArrowProps> = ({ style, onClick }) => {
 const PrevArrow: React.FC<CustomArrowProps> = ({ style, onClick }) => {
   return (
     <div
-      className="slick-arrow prev-arrow absolute top-4 right-16 cursor-pointer bg-black p-2 rounded-md shadow-md hover:bg-gray-100 transition"
+      className="slick-arrow prev-arrow  absolute flex top-20 cursor-pointer bg-black p-3 rounded-md shadow-md hover:bg-gray-100 transition"
       style={{ ...style, color: '' }}
       onClick={onClick}
     >
@@ -43,15 +43,15 @@ const Carousel = () => {
   };
 
   return (
-    <section className="bg-yellow-50 py-10 md:w/14 ">
+    <section className="bg-yellow-50 p-10 relative">
       <div className='mb-3'>
         <h1 className='  px-20 secondary-font text-black-200 text-4xl '>Our Customer Feedback</h1>
         <h5 className=' px-20 primary-font text-sm'>Don’t take our word for it. Trust our customers</h5>
       </div>
-      <div className="max-w-screen-xl mx-auto">
+      <div className="max-w-screen-xl relative">
         <Slider {...settings}>
           {/* Card 1 */}
-          <div className="w-full px-4 lg:w-1/2 md:w-full sm:w-full">
+          <div className="w-full px-4 relative ">
             <div className=" items-center bg-white p-8 rounded-lg shadow">
               <div className='flex justify-between'>
                 <div className=''>
@@ -75,7 +75,7 @@ const Carousel = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="w-full px-4 lg:w-full md:w-full">
+          <div className="w-full px-4 ">
             <div className=" items-center bg-white p-8 rounded-lg shadow">
               <div className='flex justify-between'>
                 <div className=''>
@@ -98,17 +98,16 @@ const Carousel = () => {
             </div>
           </div>
           {/* Card 3 */}
-          <div className="w-full px-4 sm:w-full">
+          <div className="w-full px-4 ">
             <div className=" items-center bg-white p-8 rounded-lg shadow">
               <div className='flex justify-between'>
                 <div className=''>
-                <img src={avatar3} alt='avatar3' />
-
+                  <img src={avatar3} alt="avatar3" />
                 </div>
                 <div className='flex'>
                 <img src={starpurple} alt="stars1" />
               <img src={starpurple} alt="stars1" />
-              <img src={starhalf} alt="stars1" />
+              <img src={starpurple} alt="stars1" />
               <img src={starhalf} alt="stars1" />
               </div>
               </div>

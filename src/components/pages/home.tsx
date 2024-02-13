@@ -40,30 +40,35 @@ import Footer from '../ui/footer';
               <div>
               <p className="text-sm bg-violet-200 rounded-md py-1 inline-block px-8 text-primary">
               EFFORTLESSLY WRITE ARTICLE WITH OUR AI SOLUTION </p>
-              </div>
-          
+              </div>  
             </div>
-          
           </div>
-          <div className='relative primary-font'>
-          <h1 className="text-7xl font-bold text-droid-serif mb-6 relative">
-            Transform your <span className='text-primary'>writing</span>
+
+          <div className='relative primary-font '>
+            <div>
+          
+          <img src={sketch} alt="Sketch" className="w-full h-1/2 absolute left-1/4 ml-20 mb-8 bottom-20" />
+          <h1 className="text-7xl font-bold primary-font mb-6 relative">
+          Create niched content<span className='text-primary'></span>
           </h1>
            <span className='inline-block flex absolute  sm:right-1/4'>
-              <img src={sketch} alt="Sketch" className="w-full h-full" />
               </span>
 
           <h1 className="text-7xl font-bold mb-6 relative">
             <span className='px-5 mx-2'>with</span>
-            <span className='text-primary relative'>   Topicalflow</span>
+            <span className='text-primary relative'>Topicalflow</span>
+
             <span className='inline-block absolute top-1/2 left-1/3 transform -translate-x-2/4 -translate-y-1/2'>
-              <img src={vector} alt="Vector" className="w-full h-full" />
+              <div>
+              <img src={vector} alt="Vector" className="w-22 ml-12 h-full md:w-22 ml-22" />
+              </div>
             </span>
           </h1>
+          </div>
 
           </div>
   
-          <h6 className="secondary-font flex-wrap">
+          <h6 className="secondary-font flex-wrap text-gray-500">
             Our AI-driven tool analyzes your input and provides real-time suggestions, turning your thoughts into eloquent prose
           </h6>
         </div>
@@ -71,37 +76,37 @@ import Footer from '../ui/footer';
 
       {/* Next Section - Call to Action */}
       <div className="flex justify-center items-center mt-8">
-        <div className="relative bg-white text-black rounded-full px-8 py-2 border-t-4 border-black shadow-lg"
+        <div className="relative text-black rounded-full px-8 py-2 border-2  shadow-lg"
           style={{ width: '644px', height: '79px', top: '5px' }}
         >
           <input
-            className="absolute top-1/2 left-4 transform -translate-y-1/2 w-full text-secondary px-3 py-3 border-none focus:outline-none"
+            className="absolute top-1/2 left-4  -translate-y-1/2 w-full outline-none primary-font px-3 py-3"
             type="email"
             placeholder="Enter your email or phone number"
           />
           <Link to="/signup">
-            <button className="absolute top-1/2 right-4 transform -translate-y-1/2 px-4 py-2 bg-primary text-white rounded-full">Get Started</button>
+            <button className="absolute top-1/2 right-3 transform -translate-y-1/2 px-6 py-2 bg-primary text-white rounded-full">Get Started</button>
           </Link>
         </div>
       </div>
 
       {/* Next Section - Columns */}
-      <div className="flex justify-center items-center mt-10 primary-font">
+      <div className="flex justify-center items-center mt-10  primary-font">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-center items-center">
           {/* Column 1 */}
           <div className="text-black rounded-md p-6">
-            <h2 className="text-4xl font-bold mb-1">300k+</h2>
+            <h2 className="text-4xl font-bold ">300k+</h2>
             <p className="text-lg  text-gray-800 secondary-font text-opacity-75">Registered Users</p>
           </div>
 
           {/* Column 2 */}
           <div className="bg-white rounded-md p-6 primary-font">
-            <h2 className="text-4xl font-bold mb-1">1.8 million</h2>
+            <h2 className="text-4xl font-bold ">1.8 million</h2>
             <p className="text-lg  text-gray-800 secondary-font text-opacity-75">Articles generated</p>
           </div>
 
           {/* Column 3 */}
-          <div className="bg-white p-6 primary-font">
+          <div className="bg-white p-6 primary-font ">
             <h2 className="text-4xl font-bold mb-1">500</h2>
             <p className="text-lg  text-gray-800 secondary-font text-opacity-75">topics on topicalflow</p>
           </div>
@@ -224,52 +229,53 @@ import Footer from '../ui/footer';
   <div className='flex justify-center'>
     <h1 className="text-3xl font-bold primary-font text-primary mb-2">How it Works</h1>
   </div>
-  <div className='flex justify-center'>
+  <div className='flex justify-center items-center'>
     <h1 className="text-sm font-bold primary-font">Embark on your journey into the realm of exceptionally streamlined article writing now.</h1>
   </div>
 
   {/* Steps */}
-  <div className='flex items-center px-4 md:px-24  md:flex-wrap sm:flex-wrap mt-10 justify-center'>
+  <div className='flex items-center p-5 justify-center flex-wrap mt-10 '>
     {/* Step 1 */}
-    <div className='flex-col px-4 mb-8 sm:w-full sm:flex-col md:w-full lg:w-1/4'>
-      <div className='text-center'>
+
+    <div className='flex-col px-4 mb-8  sm:w-full sm:flex-col md:w-1/2 lg:w-1/4'>
+      <div className='mt-2'>
         <h1 className='secondary-font text-primary'>01.</h1>
         <h4 className="font-bold mb-2">Input Your Ideas</h4>
       </div>
-      <div className='text-center mt-2'>
+      <div className='justify-center mt-2'>
         <p>Enter your ideas, keywords, or drafts into our user-friendly AI interface. Whether you're starting fresh or refining existing content, our tool is here to help.</p>
       </div>
     </div>
 
     {/* Step 2 */}
-    <div className='flex-col px-4 mb-8 sm:w-full md:w-full lg:w-1/4'>
-      <div className='text-center'>
+    <div className='flex-col px-4 mb-8 sm:w-full md:w-1/2 lg:w-1/4'>
+      <div className='mt-2'>
         <h1 className='secondary-font text-primary'>02.</h1>
         <h4 className="font-bold mb-2">Analyze Suggestions</h4>
       </div>
-      <div className='text-center mt-2'>
+      <div className=' mt-2'>
         <p>Our smart AI delves into your input, analyzing themes. It suggests attention-grabbing headlines and fresh angles for your content.</p>
       </div>
     </div>
 
     {/* Step 3 */}
-    <div className='flex-col px-4 mb-8 sm:w-full md:w-full lg:w-1/4'>
-      <div className='text-center'>
+    <div className='flex-col px-4 mb-8 sm:w-full md:w-1/2 lg:w-1/4'>
+      <div className='mt-2'>
         <h1 className='secondary-font text-primary'>03.</h1>
-        <h4 className="font-bold mb-2">Content Refinement</h4>
+        <h4 className="font-bold  mb-2">Content Refinement</h4>
       </div>
-      <div className='text-center mt-2'>
+      <div className=' mt-2'>
         <p>Witness AI's real-time magic. As you write, our tool refines grammar, style, and impact. See your writing transform.</p>
       </div>
     </div>
 
     {/* Step 4 */}
-    <div className='flex-col px-4 mb-8 sm:w-full md:w-full lg:w-1/4'>
-      <div className='text-center'>
+    <div className='flex-col px-4 mb-8 sm:w-full md:w-1/2 lg:w-1/4'>
+      <div className='mt-2'>
         <h1 className='secondary-font text-primary'>04.</h1>
         <h4 className="font-bold mb-2">Preview and Approve</h4>
       </div>
-      <div className='text-center mt-2'>
+      <div className=' mt-2'>
         <p>Your polished content is primed for the world. Export in different formats or seamlessly publish to preferred platforms. AI-crafted, captivating content awaits your audience.</p>
       </div>
     </div>

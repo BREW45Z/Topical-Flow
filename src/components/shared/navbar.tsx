@@ -7,16 +7,16 @@ import { Link } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
   return (
-    <div className="bg-white border-b border-gray-200 dark:border-gray-700  py-2 mt-1">
+    <div className="bg-white border-b border-gray-200 dark:border-gray-700  px-5 py-2 mt-1">
       <div className="max-w-screen-xl mx-auto px-2 py-3 flex items-center justify-between">
         {/* Logo on the left edge */}
         <a href="/" className="flex items-center space-x-2">
-          <img src={logo} alt="Logo" className="h-8 w-8" />
-          <span className="text-xl">topicalflow</span>
+          <img src={logo} alt="Logo" className="" />
+          <span className="text-2xl primary-font">Topicalflow</span>
         </a>
 
         {/* Menu items */}
-        <div className="hidden md:flex space-x-10">
+        <div className="hidden md:flex space-x-10 primary-font">
           <Link to="/" className="text-gray-700 dark:text-white hover:text-blue-500 transition duration-300">
             Home
           </Link>
@@ -35,13 +35,13 @@ const Navbar: React.FC = () => {
         <div className="flex items-center space-x-4">
           <Link to="/login">
             <button className="flex items-center justify-center gap-10 
-            bg-white border-2 border-primary text-primary px-4 py-2 rounded-full hover:bg-white 
+            bg-white border-2 border-primary text-primary px-5 py-2 rounded-md hover:bg-white 
             hover:text-primary transition duration-300"> Sign In
             </button>
           </Link>
 
           <Link to="/signup">
-            <button className="bg-primary text-white px-4 py-2 rounded-full hover:bg-3B2385 hover:text-white transition duration-300">
+            <button className="bg-primary text-white px-5 py-2 rounded-md hover:bg-3B2385 hover:text-white transition duration-300">
               Get Started
             </button>
           </Link>
