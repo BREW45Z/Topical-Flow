@@ -1,5 +1,6 @@
 {
   "name": "topical-flow",
+  "homepage": "http://topicalflow.com/",
   "private": true,
   "version": "0.0.0",
   "type": "module",

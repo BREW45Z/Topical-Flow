@@ -15,10 +15,11 @@ import AIicon1 from '../assets/aiicons1.svg';
 import AIicon2 from '../assets/aiicons2.svg';
 import AIicon3 from '../assets/aiicons3.svg';
 import AIicon4 from '../assets/aiicons4.svg';
-import infoperson2 from '../assets/infoperson2.svg';
 import Pricing from '../ui/pricing';
 import Carousel from '../ui/home-carousel';
 import Footer from '../ui/footer';
+import vector2 from '../assets/Vector 2.svg'
+
 
 
 
@@ -38,8 +39,8 @@ import Footer from '../ui/footer';
           <div className='border-primary'>
             <div className='border-primary'>
               <div>
-              <p className="text-sm bg-violet-200 rounded-md py-1 inline-block px-8 text-primary">
-              EFFORTLESSLY WRITE ARTICLE WITH OUR AI SOLUTION </p>
+              <p className="text-md bg-violet-200 rounded-full py-1 inline-block px-8 text-primary">
+              EFFICIENTLY BUILD AUTHORITY AND RANK HIGHER </p>
               </div>  
             </div>
           </div>
@@ -68,8 +69,9 @@ import Footer from '../ui/footer';
 
           </div>
   
-          <h6 className="secondary-font flex-wrap text-gray-500">
-            Our AI-driven tool analyzes your input and provides real-time suggestions, turning your thoughts into eloquent prose
+          <h6 className=" whitespace-normal flex-wrap secondary-font text-gray-500">
+       Topicalflow is designed to help you establish yourself as a trusted subject matter experts through the <span className='block'> automatic generation of smart,interconnected content customized to your niche.</span>
+
           </h6>
         </div>
       </div>
@@ -82,7 +84,7 @@ import Footer from '../ui/footer';
           <input
             className="absolute top-1/2 left-4  -translate-y-1/2 w-full outline-none primary-font px-3 py-3"
             type="email"
-            placeholder="Enter your email or phone number"
+            placeholder="Enter your email"
           />
           <Link to="/signup">
             <button className="absolute top-1/2 right-3 transform -translate-y-1/2 px-6 py-2 bg-primary text-white rounded-full">Get Started</button>
@@ -90,34 +92,8 @@ import Footer from '../ui/footer';
         </div>
       </div>
 
-      {/* Next Section - Columns */}
-      <div className="flex justify-center items-center mt-10  primary-font">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-center items-center">
-          {/* Column 1 */}
-          <div className="text-black rounded-md p-6">
-            <h2 className="text-4xl font-bold ">300k+</h2>
-            <p className="text-lg  text-gray-800 secondary-font text-opacity-75">Registered Users</p>
-          </div>
-
-          {/* Column 2 */}
-          <div className="bg-white rounded-md p-6 primary-font">
-            <h2 className="text-4xl font-bold ">1.8 million</h2>
-            <p className="text-lg  text-gray-800 secondary-font text-opacity-75">Articles generated</p>
-          </div>
-
-          {/* Column 3 */}
-          <div className="bg-white p-6 primary-font ">
-            <h2 className="text-4xl font-bold mb-1">500</h2>
-            <p className="text-lg  text-gray-800 secondary-font text-opacity-75">topics on topicalflow</p>
-          </div>
-        </div>
-        </div>
-
-
-
-
         <div className=' mt-10 flex primary-font justify-center items-center'>
-        <p className='text-2xl'> More than a million articles generated using topicalflow, tested by the best companies</p>
+        <p className='text-1xl'> More than a million articles generated using topicalflow, tested by the best companies</p>
         </div>
     
      {/* Next Section - Logo carousel */}
@@ -134,35 +110,39 @@ import Footer from '../ui/footer';
       </div>
 
     {/* Two Columns Section */}
-<div className=" flex w-full items-center justify-center p-20 bg-purple-100">
+<div className=" flex selft-stretch  items-center bg-purple-100">
   {/* Left Column */}
-  <div className=" flex ">
-    <div className="justify-center items-center p-20 ">
-      <h4 className=" text-3xl primary-font mb-3">About Topicaflow</h4>
+  <div className='p-10'>
+  <div className="mx-10">
+    <div className="p-20">
+      <h4 className=" text-3xl  primary-font ">About Topicaflow</h4>
       <div className=''>
-        <p className=" flex-wrap text-gray-500 text-1xl  primary-font ">
-          "TopicalFlow" is an AI-driven content generation tool aimed
-          at helping users build topical authority. The web application
-          enables users to create projects within a specific niche,
-          for which the AI system will then suggest relevant topics.
+        <p className="  text-gray-500 text-1xl primary-font ">
+        Topicalflow is an AI-driven content generation tool aimed at helping users 
+        build topical authority. It stands out by offering a unique, holistic approach 
+        to content strategy. Unlike conventional AI writing tools like
+         ChatGPT, Copy.ai, and Jasper, which focus on generating individual content pieces, 
+         Topicalflow assists users in creating an interconnected content ecosystem. 
+         This holistic strategy does more than generate articles; 
+         it builds and reinforces topical authority, setting Topicalflow apart from its competitors.
         </p>
         
       </div>
-      <div className='px-20'>
+      <div className=''>
       <Link to="/signup">
-            <button className=" bg-primary text-white  px-12  py-4 mt-3  rounded-md hover:bg-white hover:text-black transition duration-300">
-              Learn more
+            <button className=" bg-primary text-white  px-12  py-4 mt-3  rounded-full  hover:bg-black hover:text-white transition duration-300">
+            Get Started
             </button>
           </Link>
       </div>
     </div>
     {/* Add more text or content as needed */}
   </div>
+  </div>
 
  {/* Right Column */}
-
-  <div className='w-full flex flex-wrap'>
-    <img src={dashbimg} alt="dashboard-image" className="w-[800px] h-[430x]" />
+  <div className='w-full h-full overflow rounded-lg shadow-md '>
+    <img src={dashbimg} alt="dashboard-image" className="w-full h-full" />
  </div>
 
 </div>
@@ -180,7 +160,7 @@ import Footer from '../ui/footer';
 </div>
 
 {/* Boxes*/}
-<div className='flex justify-center items-center p-4 mt-10  bg-gray-300'> 
+<div className='flex justify-center items-center  mt-10'> 
 <div className='mt-5 flex text-white justify-center self-strech flex-wrap gap-3 items-center'>
 <div className='flex flex-col rounded-md items-center px-3 bg-gray-900 mr-10 w-[250px] h-[250px]'>
   <div className='bg-gray-700 mt-9  w-12 h-12 rounded-full'>
@@ -217,13 +197,9 @@ import Footer from '../ui/footer';
 
 </div>
 </div>
-
-
 </div>
 
 
-
-{/* How it Works */}
 {/* How it Works */}
 <div className='items-center justify-center mt-20'>
   <div className='flex justify-center'>
@@ -234,16 +210,17 @@ import Footer from '../ui/footer';
   </div>
 
   {/* Steps */}
-  <div className='flex items-center p-5 justify-center flex-wrap mt-10 '>
+  <div className='shadow'>
+  <div className='flex items-center p-5 justify-center flex-wrap mt-10'>
     {/* Step 1 */}
 
     <div className='flex-col px-4 mb-8  sm:w-full sm:flex-col md:w-1/2 lg:w-1/4'>
       <div className='mt-2'>
         <h1 className='secondary-font text-primary'>01.</h1>
-        <h4 className="font-bold mb-2">Input Your Ideas</h4>
+        <h4 className="font-bold mb-2">Enter your niche and your keywords</h4>
       </div>
       <div className='justify-center mt-2'>
-        <p>Enter your ideas, keywords, or drafts into our user-friendly AI interface. Whether you're starting fresh or refining existing content, our tool is here to help.</p>
+        <p>Begin by entering your niche, input your keywords or allow Topicalflow to suggest low-competition, high-potential keywords using its advanced discovery tools. This ensures the content you create targets areas with maximum growth potential.</p>
       </div>
     </div>
 
@@ -253,7 +230,7 @@ import Footer from '../ui/footer';
         <h1 className='secondary-font text-primary'>02.</h1>
         <h4 className="font-bold mb-2">Analyze Suggestions</h4>
       </div>
-      <div className=' mt-2'>
+      <div className='  justify-center mt-2'>
         <p>Our smart AI delves into your input, analyzing themes. It suggests attention-grabbing headlines and fresh angles for your content.</p>
       </div>
     </div>
@@ -262,10 +239,10 @@ import Footer from '../ui/footer';
     <div className='flex-col px-4 mb-8 sm:w-full md:w-1/2 lg:w-1/4'>
       <div className='mt-2'>
         <h1 className='secondary-font text-primary'>03.</h1>
-        <h4 className="font-bold  mb-2">Content Refinement</h4>
+        <h4 className="font-bold  mb-2">Automated content creation</h4>
       </div>
       <div className=' mt-2'>
-        <p>Witness AI's real-time magic. As you write, our tool refines grammar, style, and impact. See your writing transform.</p>
+        <p>With the structure in place, move on to content creation. You can input custom prompts or let Topicalflow's AI generate engaging, SEO-optimized content based on the predetermined structure. This step combines creativity with precision, producing ready-to-publish articles.</p>
       </div>
     </div>
 
@@ -273,10 +250,10 @@ import Footer from '../ui/footer';
     <div className='flex-col px-4 mb-8 sm:w-full md:w-1/2 lg:w-1/4'>
       <div className='mt-2'>
         <h1 className='secondary-font text-primary'>04.</h1>
-        <h4 className="font-bold mb-2">Preview and Approve</h4>
+        <h4 className="font-bold mb-2">Ready to publish</h4>
       </div>
       <div className=' mt-2'>
-        <p>Your polished content is primed for the world. Export in different formats or seamlessly publish to preferred platforms. AI-crafted, captivating content awaits your audience.</p>
+        <p>Finally, seamlessly publish your newly created content to your WordPress site or any connected CMS directly from Topicalflow. This integration not only saves time but also ensures your content strategy is executed without delay, maintaining momentum in your content marketing efforts.</p>
       </div>
     </div>
   </div>
@@ -284,37 +261,14 @@ import Footer from '../ui/footer';
   {/* Call to Action */}
   <div className='flex justify-center items-center p-10'>
     <Link to="/signup">
-      <button className="bg-primary text-white px-14 py-3 text-xl rounded-md hover:bg-3B2385 primary-font hover:text-white transition duration-300">
+      <button className="bg-primary text-white px-14 py-3 text-xl rounded-full hover:bg-3B2385 primary-font hover:text-white transition duration-300">
         Get Started now
       </button>
     </Link>
   </div>
 </div>
-
-
-
-{/** Next Section*/}
-<div className='flex p-4 bg-gray-100 '>
-  <div className='flex items-center justify-center mt-4 md:w-full sm:w-full'>
-    <div className=' m-20 text-bold primary-font text-base '>
-      <h1 className='text-lg md:text-3xl lg:text-4xl xl:text-5xl flex flex-wrap'>
-        <span className="block">Write fluently.</span>
-        <span className="block">Communicate with confidence.</span>
-        <span className="block">We write for various Industries.</span>
-      </h1>
-      <p className='text-sm mt-4 mb-5'>Generate your top-notch article with no restrictions,
-      <span className='block'>create  well structured content from your mobile phone.</span></p> 
-      <Link to="/signup">
-            <button className="bg-primary text-white px-4 py-4 rounded-md hover:bg-3B2385 hover:text-white transition duration-300">
-              Sign up for free
-            </button>
-          </Link>
-    </div>
-    <div className='w-full h-full mr-20 mt-10 p-4 '>
-      <img src={infoperson2} alt="infoperson2" className='justify-center' />
-    </div>
-  </div>
 </div>
+
 
 {/** Next Section - Pricing */}
 <div>
@@ -326,17 +280,27 @@ import Footer from '../ui/footer';
 
  <section>
   <div className='flex justify-center'>
-    <h1 className=' primary-font text-black p-4 text-6xl text-center mt-20 items-center justify-center'>Be part of the future of the <span className='block '> Topicalflow
+    <h1 className=' primary-font text-black px-4 text-6xl text-center mt-20 items-center justify-center'>Be part of the future of the <span className='block '> Topicalflow
       </span></h1>
   </div>
-  <div>
-    <h6 className='justify-center p-2  text-purple-500 flex secondary-font'>Unleash the power of AI within topicalflow. Upgrade your <span className='block '>     productivity with topicalflow</span></h6>
-  </div>
-  <div>
-    <div className='bg-bg-gradient-to-r from-blue-500 via-purple-500 to-pink py-3 px-3'>
-
-
+  <div className='flex items-center justify-center mt-4'>
+  <div className='mb-5  flex'>
+      <img src={vector2} alt="Vector2" />
     </div>
+  </div>
+  <div className='mt-2'>
+    <h6 className='justify-center p-2  text-dark items-center justify-center text-center secondary-font'>Unleash the power of AI within topicalflow. Upgrade your <span className='block '>productivity with topicalflow
+</span>
+</h6>
+
+  </div>
+  <div className='items-center flex-col  mt-5  mb-20 flex justify-center'>
+  
+  <Link to="/signup">
+      <button className="bg-primary text-white px-14 py-3 text-xl rounded-full hover:bg-3B2385 primary-font hover:text-white transition duration-300">
+        Get Started now
+      </button>
+    </Link>
   </div>
  </section>
 

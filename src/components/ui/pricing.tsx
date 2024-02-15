@@ -23,11 +23,11 @@ const Pricing = () => {
             <h6 className='bg-purple-100 ml-5 rounded-md'>popular</h6>
           </div>
           <div className='flex justify-start items-center'>
-              <h1 className='text-5xl  mt-5 secondary-font px-1'>$10</h1>
+              <h1 className='text-5xl  mt-5 secondary-font px-1'>$0</h1>
               <h6 className='text-sm secondary-font mt-8'>per month</h6>
             </div>
             <div className='mt-5 primary-font'>
-                <h6 className='text-sm primary-font'>Basic features for up to 10 users.</h6>
+                <h6 className='text-sm primary-font'>Try for free.</h6>
             </div>
             <button className=' mt-2 mb-4 bg-purple-500 text-white px-24 py-1 items-center justify-center rounded-md'>
                 Get started
@@ -38,7 +38,6 @@ const Pricing = () => {
 
             <div className='text-sm primary-font'>
                 <h6 className='text-sm'>FEATURES</h6>
-                <h6>Everything in <span><strong>Starter</strong></span> plus...</h6>
                 <div className=' primary-font flex'>
                     <div className='flex mt-5 py-1'>
                     <img src={checkicon} alt="checkicon"  className=''/>
@@ -85,11 +84,11 @@ const Pricing = () => {
             <h5 className='secondary-font mr-10 justify-start text-gray-500'>Business plan</h5>
           </div>
           <div className='flex justify-start items-center'>
-              <h1 className='text-5xl  mt-5 secondary-font px-1'>$20</h1>
+              <h1 className='text-5xl  mt-5 secondary-font px-1'>$45</h1>
               <h6 className='text-sm secondary-font mt-8'>per month</h6>
             </div>
             <div className='mt-5 primary-font'>
-                <h6 className='text-sm primary-font'>Basic features for up to 10 users.</h6>
+                <h6 className='text-sm primary-font'>Write article like a pro.</h6>
             </div>
             <button className=' mt-2 mb-4 bg-purple-500 text-white px-24 py-1 items-center justify-center rounded-md'>
                 Get started
@@ -100,7 +99,6 @@ const Pricing = () => {
 
             <div className='text-sm primary-font'>
                 <h6 className='text-sm'>FEATURES</h6>
-                <h6>Everything in <span><strong>Basic</strong></span> plus...</h6>
                 <div className=' primary-font flex'>
                     <div className='flex mt-5 py-1'>
                     <img src={checkicon} alt="checkicon"  className=''/>
@@ -145,11 +143,11 @@ const Pricing = () => {
             <h5 className='secondary-font mr-10 justify-start text-gray-500'>Enterprise plan</h5>
           </div>
           <div className='flex justify-start items-center'>
-              <h1 className='text-5xl  mt-5 secondary-font px-1'>$40</h1>
+              <h1 className='text-5xl  mt-5 secondary-font px-1'>$75</h1>
               <h6 className='text-sm secondary-font mt-8'>per month</h6>
             </div>
             <div className='mt-5 primary-font'>
-                <h6 className='text-sm primary-font'>Basic features for up to 10 users.</h6>
+                <h6 className='text-sm primary-font'>Suitable for blogs.</h6>
             </div>
             <button className=' mt-2 mb-4 bg-purple-500 text-white px-24 py-1 items-center justify-center rounded-md'>
                 Get started
@@ -160,7 +158,6 @@ const Pricing = () => {
 
             <div className='text-sm primary-font'>
                 <h6 className='text-sm'>FEATURES</h6>
-                <h6>Everything in <span><strong>Business</strong></span> plus...</h6>
                 <div className=' primary-font flex'>
                     <div className='flex mt-5 py-1'>
                     <img src={checkicon} alt="checkicon"  className=''/>

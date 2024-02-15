@@ -35,13 +35,13 @@ const Navbar: React.FC = () => {
         <div className="flex items-center space-x-4">
           <Link to="/login">
             <button className="flex items-center justify-center gap-10 
-            bg-white border-2 border-primary text-primary px-5 py-2 rounded-md hover:bg-white 
+            bg-white border-2 border-primary text-primary px-5 py-3 rounded-full hover:bg-white 
             hover:text-primary transition duration-300"> Sign In
             </button>
           </Link>
 
           <Link to="/signup">
-            <button className="bg-primary text-white px-5 py-2 rounded-md hover:bg-3B2385 hover:text-white transition duration-300">
+            <button className="bg-primary  boarder-2 text-white px-5 py-3 rounded-full hover:bg-3B2385 hover:text-white transition duration-300">
               Get Started
             </button>
           </Link>
